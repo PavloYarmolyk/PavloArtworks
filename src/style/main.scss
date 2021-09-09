@@ -1,0 +1,39 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './abstracts/helpers';
+
+@import './base/base';
+@import './base/typography';
+@import './base/sections';
+
+@import './components/buttons';
+
+// @import './sections/header';
+// @import './sections/footer';
+
+@import '../components/Hero/hero';
+@import '../components/Biography/biography';
+@import '../components/Header/header';
+@import '../components/Footer/footer';
+// @import './sections/presentation';
+// @import './sections/service';
+// @import './sections/staff';
+// @import './sections/testimonials';
+// @import './sections/promo';
+// @import './sections/lastCall';
+// @import './sections/about';
+// @import './sections/contact';
+// @import './sections/projects';
+// @import './sections/priceList';
+// @import './sections/form';
+
+// @import './sections/pricesPage';
+// @import './sections/aboutUs';
+// @import './sections/blog';
+// @import './sections/privacy';
+
+@import './vendor/css/font-awesome.min.css';
+// @import '../images/hero-gallery-desktop.webp';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Limelight&family=Marck+Script&family=Mr+De+Haviland&family=Open+Sans&display=swap');

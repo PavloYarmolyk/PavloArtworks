@@ -1,0 +1,18 @@
+{
+  "pathPrefix": "/",
+  "title": "Pavlo Yarmolyk | Online Gallery",
+  "description": "Pavlo Yarmolyk | Online Gallery. Artworks by Ukrainian Artist Pavlo Yarmolyk",
+  "titleAlt": "Pavlo Yarmolyk | Online Gallery",
+  "headline": "Artworks by Ukrainian Artist Pavlo Yarmolyk",
+  "url": "https://www.pavloyarmolyk.site",
+  "siteLanguage": "en",
+  "logo": "/seo-image.webp",
+  "ogLanguage": "en_PT",
+
+  "favicon": "src/images/favbio.png",
+  "shortName": "Pavlo Yarmolyk | Online Gallery",
+  "author": "Pavlo Omelianchuk",
+  "themeColor": "#799db8",
+  "backgroundColor": "#000000",
+  "facebook": "pavlo.armolik"
+}

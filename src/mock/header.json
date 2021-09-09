@@ -1,0 +1,23 @@
+{
+  "logo": "../images/seo-image.webp",
+  "alt": "Pavlo yarmolyk",
+  "logo_link_to": "/",
+  "menu_tab": [
+    {
+      "nav_title": "Home",
+      "nav_link": "/"
+    },
+    {
+      "nav_title": "Blog",
+      "nav_link": "/"
+    },
+    {
+      "nav_title": "Artworks",
+      "nav_link": "/artworks"
+    },
+    {
+      "nav_title": "About me",
+      "nav_link": "/biography"
+    }
+  ]
+}

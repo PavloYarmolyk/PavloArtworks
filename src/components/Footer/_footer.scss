@@ -1,0 +1,73 @@
+.footer {
+  background-color: $dark-grey;
+  color: $white-color;
+  padding: 4rem 0 5rem;
+  z-index: 5;
+
+  @include respond(phone) {
+  }
+
+  #dev-by {
+    font-size: 1.3rem;
+  }
+  &__text {
+    color: darken(white, 50%);
+    font-size: 1.5rem;
+
+    a {
+      text-transform: initial;
+      letter-spacing: 2px;
+      color: $white-color;
+      font-size: 1.5rem;
+      transition: all 0.4s;
+      display: inline-block;
+      background-color: $dark-grey;
+
+      &:hover,
+      &:active {
+        color: $primary-color;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .back-to-top i {
+      color: $white-color;
+      margin: 0;
+      transition: all 0.2s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+    .gatsby-image-wrapper {
+      width: 60%;
+    }
+  }
+
+  .footer-contacts-wrapper {
+    display: none;
+    @include respond(phone) {
+      position: fixed;
+      bottom: 2px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: $alfa-secondary-color;
+      background: #fff;
+    }
+  }
+}
+#share-buttons > a {
+  padding: 0 12px;
+}
