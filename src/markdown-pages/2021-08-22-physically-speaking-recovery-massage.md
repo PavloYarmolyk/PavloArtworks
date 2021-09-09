@@ -9,8 +9,6 @@ excerpt: "Graduated Lviv National Academy of Fine Arts in 2009. I work in
   different types of fine arts: installation, sculpture, mosaics, restoration,
   but primarily in panel and monumental painting."
 ---
-<!--StartFragment-->
-
 <p class='main-bio'>
 
 Graduated Lviv National Academy of Fine Arts in 2009. I work in different types of fine arts: installation, sculpture, mosaics, restoration, but primarily in panel and monumental painting.
@@ -18,10 +16,6 @@ Graduated Lviv National Academy of Fine Arts in 2009. I work in different types 
 I had several personal exhibitions, and participated in collective projects in Ukraine and abroad:
 
 </p>
-
-<!--EndFragment-->
-
-<!--StartFragment-->
 
 1. #### 1999 Exhibition of Young Artists. Ternopil, Ukraine
 2. #### 2004 Scenography for a concert of the Creative Club “Reйвax”. Yevpatoria, Crimea
@@ -36,10 +30,6 @@ I had several personal exhibitions, and participated in collective projects in U
 11. #### 2017 “Under the star of Pinzel”. Collective exhibition. Lviv, Ukraine
 12. #### Since 2019 I have been working creatively in the workshop, and I am engaged in the restoration of the facades of old houses.
 
-<!--EndFragment-->
-
-<!--StartFragment-->
-
 <p class='main-bio'>
 
 Ideas for my works I get from different sources. The main sources are the life itself, my life, the way, actions, things that surround me, etc. Often, in order to create new work, I combine old masters’ techniques with modern materials (metal, cloth, wood, pigments, paints, smalt, stone, glass. I also use household items, parts from bicycles, things that symbolize or indicate a certain place or time, checks, tickets, and similar materials that conditionally record time. It is pleasant that ordinary things and materials acquire a different meaning, become images and symbols. There is also an idea of the free will of the human being in some of my works. "We have a keys to happiness and a nails for torture", where were used materials of symbolic character and mystic meaning, which are typically used in the icons creation.
@@ -48,11 +38,7 @@ I can say that the main idea of my inspiration and art works is th
 
 </p>
 
-<!--EndFragment-->
-
 ![Bio-Francisk-Of-Assisi](../images/bio-francisk-of-assisi.webp "'Francis of Assisi'")
-
-<!--StartFragment-->
 
 <span class='image-description'> 
 
@@ -60,30 +46,18 @@ I can say that the main idea of my inspiration and art works is th
 
 <span/>
 
-<!--EndFragment-->
+![3d-compositions](../images/001_metal-compos_003.webp "\\"Wheel\\" and \\"Wheel fragment\\"")
 
-![3d-compositions]( "\"Wheel\" and \"Wheel fragment\"")
 
-<!--StartFragment-->
 
 <span class='image-description'> 
 
-<!--StartFragment-->
-
 In the voluminous-spatial 3D compositions "Wheel"and "Wheel fragment" created from the bicycle parts, I tried to show the human desire for perfection through the shape and the circle sign, as an ancient symbol of constant motion and change that is used in many cultures of the world.
 
-<!--EndFragment-->
-
 <span/>
-
-<!--EndFragment-->
-
-<!--StartFragment-->
 
 <p class='main-bio'>
 
 I can say that the main idea of my inspiration and art works is the constant contemplation of the nature and its creations and pass these observations through my being.
 
 <p/>
-
-<!--EndFragment-->
