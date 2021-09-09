@@ -62,7 +62,7 @@ I can say that the main idea of my inspiration and art works is th
 
 <!--EndFragment-->
 
-![3d-compositions](../images/001_metal-compos_003.jpg "\\"Wheel\\"and \\"Wheel fragment\\"")
+![3d-compositions]( "\"Wheel\" and \"Wheel fragment\"")
 
 <!--StartFragment-->
 
