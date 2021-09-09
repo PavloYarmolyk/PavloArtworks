@@ -22,14 +22,16 @@ export default function Bio() {
     }
   `);
 
-  const { markdownRemark } = pageQuery;
+  const {
+    markdownRemark: { frontmatter, html }
+  } = pageQuery;
   return (
     <>
       <div className="bio-bg" />
       <div className="overlay"></div>
       <div className="bio-message-wrapper">
-        <h1>{markdownRemark.frontmatter.title}</h1>
-        <div className="bio-content" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+        <h1>{frontmatter.title}</h1>
+        <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </>
   );
