@@ -8,7 +8,7 @@ const SEO = ({ title, description, image, article }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
 
-  const { defaultTitle, defaultDescription, siteUrl, banner, ogLanguage, siteLanguage, } =
+  const { defaultTitle, defaultDescription, siteUrl, banner, ogLanguage, siteLanguage } =
     site.siteMetadata;
 
   const seo = {
@@ -25,6 +25,7 @@ const SEO = ({ title, description, image, article }) => {
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 
