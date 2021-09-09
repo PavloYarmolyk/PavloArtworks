@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: EcoMadeirinha/PavloYarmolyk_Gatsby
+  repo: PavloYarmolyk/PavloArtworks
   branch: main
 
 media_folder: src/images
