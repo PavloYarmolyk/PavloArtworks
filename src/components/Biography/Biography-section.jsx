@@ -1,8 +1,6 @@
 import React from 'react';
 import { Fade, Zoom } from 'react-reveal';
 import { Link } from 'gatsby';
-import BioImg from '../Image/AboutImg';
-import bioData from '../../mock/hero.json';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -16,23 +14,33 @@ export default function Bio() {
           slug
           excerpt
           date
+          bioImage {
+            name
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED, formats: WEBP)
+            }
+          }
         }
         html
       }
     }
   `);
-
+  
   const {
-    markdownRemark: { frontmatter, html }
+    markdownRemark: { frontmatter, html },
   } = pageQuery;
+  const image = getImage(frontmatter.bioImage);
   return (
-    <>
+    <div id="name">
       <div className="bio-bg" />
       <div className="overlay"></div>
       <div className="bio-message-wrapper">
-        <h1>{frontmatter.title}</h1>
+        <div>
+          <GatsbyImage image={image} alt={frontmatter.title} />
+          <h1>{frontmatter.title}</h1>
+        </div>
         <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-    </>
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer-section';
 
 function PageWrapper({ children, footerLinkTo }) {
   return (
-    <div style={{width:'40%'}}>
+    <div>
       <Header />
       {children}
       <Footer linkTo={footerLinkTo} />

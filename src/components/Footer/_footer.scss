@@ -33,11 +33,14 @@
   }
 
   .footer-flex {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .back-to-top i {
+      position: absolute;
+      right: 10rem;
       color: $white-color;
       margin: 0;
       transition: all 0.2s ease-in;

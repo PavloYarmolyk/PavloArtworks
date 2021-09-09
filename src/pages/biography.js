@@ -8,7 +8,7 @@ const BioPage = () => {
   return (
     <>
       <Seo />
-      <PageWrapper footerLinkTo="#best-offers">
+      <PageWrapper footerLinkTo="#name">
         <Biography />
       </PageWrapper>
     </>

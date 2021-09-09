@@ -13,22 +13,33 @@
   }
 }
 .bio-message-wrapper {
-  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   z-index: 5;
+  color: $white-color;
   .bio-content {
-    text-align: initial;
-    color: $white-color;
     width: 70rem;
     max-width: 85vw;
+
+    & ol{
+      font-size: 2rem;
+      text-align: initial;
+    }
+
+    & .gatsby-resp-image-image{
+      border-radius: 5%;
+    }
+    & .gatsby-resp-image-background-image{
+      border-radius: 5%;
+    }
   }
 }
 .overlay {
-  position: fixed; 
-  width: 100%; 
-  height: 100%; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
