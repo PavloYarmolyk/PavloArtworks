@@ -1,104 +1,89 @@
 ---
 layout: biography
-slug: '/biography/recovery-massage'
+slug: /biography/bio
 date: 2021-08-22T12:19:12.994Z
-title: "PHYSICALLY SPEAKING: RECOVERY MASSAGE"
+title: Pavlo Yarmolyk
 featured: recovery-massage.jpg
-excerpt: For the elite tennis player, showing up to every match alert,
-  refreshed and at the top of your game is essential for success. One key
-  component to on-court success is the use of recovery massage.
+bioImage: ../images/bio.webp
+excerpt: "`Graduated Lviv National Academy of Fine Arts in 2009. I work in
+  different types of fine arts: installation, sculpture, mosaics, restoration,
+  but primarily in panel and monumental painting.`"
 ---
-Recovery massage focuses on three key areas: 
+`<!--StartFragment-->`
 
-* Restoration of the whole body
-* Prevention from injury through early identification and treatment of problem areas
-* Preparation of the mind and body for competition or training
+`<p>`
 
-Understanding why, how and when to have a recovery massage is an important aspect of your preparation and performance in tennis.
+`Graduated Lviv National Academy of Fine Arts in 2009. I work in different types of fine arts: installation, sculpture, mosaics, restoration, but primarily in panel and monumental painting.`
 
-**WHY?**
+`I had several personal exhibitions, and participated in collective projects in Ukraine and abroad:`
 
-Recovery Massage:
+`</p>`
 
-* Increases blood and lymph circulation helping muscles to recover
-* Decreases muscle soreness and shortens recovery time by removing waste products
-* Helps muscle endurance and power output when playing multiple matches • Reduces muscle fatigue
-* Restores/improves flexibility
-* Helps calm the nervous system and relaxes the body
-* Helps prevent injuries
+`<!--EndFragment-->`
 
-**HOW?**
+<!--StartFragment-->
 
-*"Flushing" is not a massage method. It is the result of the combination of techniques*
+1. #### 1999 Exhibition of Young Artists. Ternopil, Ukraine
+2. #### 2004 Scenography for a concert of the Creative Club “Reйвax”. Yevpatoria, Crimea
+3. #### 2006 Lviv autumn salon. Collective exhibition. Lviv, Ukraine
+4. #### 2010 Easter exhibition of Ukrainian artists. Paris, Madrid
+5. #### 2010 Personal exhibition. Gallery "Yuka". Lviv, Ukraine
+6. #### 2015 Personal exhibition. Gorajec, Poland
+7. #### 2015 Personal exhibition. "Bunker Muse" gallery. Ternopil, Ukraine
+8. #### 2015 Personal exhibition. "Factory of jam", art location. Lviv, Ukraine
+9. #### Starting from 2016 I am teaching Academic Drawing and Painting at the Ukrainian Academy of Printing.
+10. #### 2017 Art Cube. Collective exhibition. Lviv, Ukraine
+11. #### 2017 “Under the star of Pinzel”. Collective exhibition. Lviv, Ukraine
+12. #### Since 2019 I have been working creatively in the workshop, and I am engaged in the restoration of the facades of old houses.
 
-**Recovery massage may include the following techniques:**
+<!--EndFragment-->
 
-***Longitudinal strokes:***
+<!--StartFragment-->
 
-**Method:** Initially, the stroke is applied slowly and with light pressure. It is a long flowing, broad stroke to warm the soft tissues and help with relaxation. The stroke provides sensory feedback to the therapist about areas of soft tissue tightness or restrictions that may require treatment to reduce the risk of injury. The stroke is then applied gradually to deeper levels.
+<p>
 
-**Results:** 1. Helps to realign muscle fibres for stretch and allows them to contract and relax without restriction. 2. Reduces inflammation and supports muscle regeneration. 3. Blood flow and lymphatic drainage can be improved.
+`Ideas for my works I get from different sources. The main sources are the life itself, my life, the way, actions, things that surround me, etc. Often, in order to create new work, I combine old masters’ techniques with modern materials (metal, cloth, wood, pigments, paints, smalt, stone, glass. I also use household items, parts from bicycles, things that symbolize or indicate a certain place or time, checks, tickets, and similar materials that conditionally record time. It is pleasant that ordinary things and materials acquire a different meaning, become images and symbols. There is also an idea of the free will of the human being in some of my works. "We have a keys to happiness and a nails for torture", where were used materials of symbolic character and mystic meaning, which are typically used in the icons creation.`
 
-***Kneading:***
+`I can say that the main idea of my inspiration and art works is the constant contemplation of the nature and its creations and pass these observations through my being.`
 
-**Method:** A rhythmical lifting, rolling and squeezing technique of tissues.
+</p>
 
-**Results:** Encourages a reflexive relaxation of the muscles and connective tissue softening.
+<!--EndFragment-->
 
-***Compressions:***
+![Bio-Francisk-Of-Assisi](../images/bio-francisk-of-assisi.webp "'Francis of Assisi'")
 
-**Method:** This technique can be applied broadly across a muscle or group of muscles.
+<!--StartFragment-->
 
-**Results:** Encourages blood circulation, connective tissue softening and muscle relaxation when applied at a superficial level. Longitudinal strokes should follow compression strokes to further encourage tissue alignment and blood flow.
+<span class='image-description'> 
 
-***Broad Cross Fibre Friction:***
+`"Francis of Assisi" I wanted to show my interest in the subject of human struggle for self-discovery and deepening in comprehending self being as part of God.`
 
-**Method:** Applied across a muscle or group of muscles, the aim is to separate the muscle and fascial (tissue) adhesions that may have restricted blood flow.
+<span/>
 
-**Results:** Improves nutrient supply to the muscles which helps speed post exercise muscle repair.
+<!--EndFragment-->
 
-***Vibration or Shaking:***
+![3d-compositions](../images/001_metal-compos_003.jpg "\"Wheel\"and \"Wheel fragment\"")
 
-**Method:** Gentle shaking to assess the soft tissues mobility.
+<!--StartFragment-->
 
-**Results:** Further relaxes the soft tissues and allows them to move more easily.
+<span class='image-description'> 
 
-***Light Stretching:***
+<!--StartFragment-->
 
-**Method:** Lengthening and elongating the muscle fibres in a controlled way, using a variety of methods.
+`In the voluminous-spatial 3D compositions "Wheel"and "Wheel fragment" created from the bicycle parts, I tried to show the human desire for perfection through the shape and the circle sign, as an ancient symbol of constant motion and change that is used in many cultures of the world.`
 
-**Results:** Relaxes the muscles and improves flexibility.
+<!--EndFragment-->
 
-***Ice Massage:***
+<span/>
 
-**Method:** Rubbing an ice bag or ‘ice in a cup’ over the skin.
+<!--EndFragment-->
 
-**Results:** When the cold is removed, blood, which is full of nutrients, floods back into the area and re-oxygenates the tissues. Cools soft tissues, minimises inflammation and promotes healing.
+<!--StartFragment-->
 
-Other techniques may be applied depending on what you and the massage therapist discover about the condition of your body in the recovery massage session.
+<p>
 
-**WHEN?**
+`I can say that the main idea of my inspiration and art works is the constant contemplation of the nature and its creations and pass these observations through my being.`
 
-**When receiving a recovery massage remember the following:**
+<p/>
 
-1. Schedule the massage 1-3 hours after your match or training (practice/fitness). Ideally, recovery massage is most effective 30-60 minutes post-match, or post training, but no longer than 24 hours later.
-
-2. A recovery massage can be completed within 15-30 minutes, depending on the area. If specific areas require treatment, this can be carried out immediately after the recovery massage or at a later time and preferably no later than the next day.
-
-3. Recovery massage is not deep tissue. Lighter long flowing strokes are used to align soft tissue fibres, promote blood flow and lymph drainage, quiet the nervous system and slow the breathing, relaxing the whole body.
-
-4. **Be actively involved** in your massage sessions. Recovery massage is an ‘awareness’ time for you. Use this time to ‘tune in’ to your body and provide feedback to the massage therapist. Understand what your body is telling you. How have you coped physically, mentally and emotionally with the challenges of competition and life on the road? Developing self-awareness may help you to understand your specific and individual requirements and your state of readiness to perform.
-
-5. Turn off your phone! Have some proper ‘time out’ and be fully engaged with the therapy process. Psychological benefits, including greater calmness, can result in insight and focus when you allow yourself to pay attention to your body and the massage. This will help your tennis performance.
-
-6. Always use a qualified and experienced sports massage therapist. They have your goal in mind. Correct application will assist your recovery and prepare you for the next match. The WTA offers certified massage therapists at each event.
-
-Massage therapy treatment works best in conjunction with adequate hydration, a tennis specific nutritional regime, regular stretching, psychological relaxation and mindfulness methods and a minimum of 7-9 hours’ sleep each night. Together these assist the restorative processes for the tennis player.
-
-**When properly rested, the body can perform optimally during training and competition.**
-
-
-
-To speak with a specialist, call us at **+(351) 963 531 684**. We’re happy to answer your [MASSAGE QUESTIONS](https://www.algarvehomemassageandbeauty.com/prices-massage). Of course, questions are welcome during your session too;
-
-### Book your appointment today!
+<!--EndFragment-->
