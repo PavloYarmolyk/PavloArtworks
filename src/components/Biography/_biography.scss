@@ -1,3 +1,8 @@
+#name{
+  position: relative;
+  height: 1px;
+  top: -10px;
+}
 .bio-bg {
   position: fixed;
   top: 0;
@@ -17,21 +22,39 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  line-height: 2;
   z-index: 5;
   color: $white-color;
+  margin: 10rem 0;
+  .bio-intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    height: 300px;
+    margin: 2rem;
+  }
   .bio-content {
-    width: 70rem;
-    max-width: 85vw;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 5px;
+    width: 100rem;
+    max-width: 95vw;
 
-    & ol{
+    & p {
       font-size: 2rem;
-      text-align: initial;
     }
 
-    & .gatsby-resp-image-image{
+    & ul {
+      font-size: 2rem;
+      text-align: justify;
+    }
+
+    & .gatsby-resp-image-image {
       border-radius: 5%;
     }
-    & .gatsby-resp-image-background-image{
+    & .gatsby-resp-image-background-image {
       border-radius: 5%;
     }
   }

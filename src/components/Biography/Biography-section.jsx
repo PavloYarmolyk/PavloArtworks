@@ -25,22 +25,23 @@ export default function Bio() {
       }
     }
   `);
-  
+
   const {
     markdownRemark: { frontmatter, html },
   } = pageQuery;
   const image = getImage(frontmatter.bioImage);
   return (
-    <div id="name">
+    <>
+      <div id="name" />
       <div className="bio-bg" />
-      <div className="overlay"></div>
+      <div className="overlay" />
       <div className="bio-message-wrapper">
-        <div>
+        <div className="bio-intro">
           <GatsbyImage image={image} alt={frontmatter.title} />
           <h1>{frontmatter.title}</h1>
         </div>
         <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-    </div>
+    </>
   );
 }
