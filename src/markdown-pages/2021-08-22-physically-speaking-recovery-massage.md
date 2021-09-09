@@ -35,8 +35,6 @@ I had several personal exhibitions, and participated in collective projects in U
 
 Ideas for my works I get from different sources. The main sources are the life itself, my life, the way, actions, things that surround me, etc. Often, in order to create new work, I combine old masters’ techniques with modern materials (metal, cloth, wood, pigments, paints, smalt, stone, glass. I also use household items, parts from bicycles, things that symbolize or indicate a certain place or time, checks, tickets, and similar materials that conditionally record time. It is pleasant that ordinary things and materials acquire a different meaning, become images and symbols. There is also an idea of the free will of the human being in some of my works. "We have a keys to happiness and a nails for torture", where were used materials of symbolic character and mystic meaning, which are typically used in the icons creation.
 
-I can say that the main idea of my inspiration and art works is the constant contemplation of the nature and its creations and pass these observations through my being.
-
 </p>
 
 ![Bio-Francisk-Of-Assisi](../images/bio-francisk-of-assisi.webp "'Francis of Assisi'")
