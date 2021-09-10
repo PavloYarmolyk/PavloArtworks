@@ -19,10 +19,10 @@ const Hero = () => (
     </div>
     <Zoom duration={500} delay={10}>
       <p className="hero-cta">
-        <Link to="/biography/">
+        <Link to="/biography">
           <span className="cta-btn cta-btn--hero">{heroData.buttonOne}</span>
         </Link>
-        <Link to="/artworks/">
+        <Link to="/artworks">
           <span className="cta-btn cta-btn--hero">{heroData.buttonTwo}</span>
         </Link>
       </p>
