@@ -29,19 +29,11 @@ export default function Bio() {
       }
     }
   `);
-  const data = pageQuery.allMarkdownRemark.edges[0];
+  const edges = pageQuery.allMarkdownRemark.edges;
   // console.log(JSON.stringify(data));
 
-
-
-  const {
-    node: { frontmatter, html },
-  } = data;
-  console.log(frontmatter)
-
-  const image = getImage(frontmatter.bioImage);
-
-  if (frontmatter !== null) {
+  const BioComponent = edges.map((edge) => {
+      const image = getImage(edge.node.frontmatter.bioImage);
     return (
       <>
         <div id="name" />
@@ -49,12 +41,18 @@ export default function Bio() {
         <div className="overlay" />
         <div className="bio-message-wrapper">
           <div className="bio-intro">
-            <GatsbyImage image={image} alt={frontmatter.title} />
-            <h1>{frontmatter.title}</h1>
+            <GatsbyImage image={image} alt={edge.node.frontmatter.title} />
+            <h1>{edge.node.frontmatter.title}</h1>
           </div>
-          <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className="bio-content"
+            dangerouslySetInnerHTML={{ __html: edge.node.html }}
+          />
         </div>
       </>
     );
-  } else return null;
+  })
+  return <div> {BioComponent}</div>;
+
+
 }
