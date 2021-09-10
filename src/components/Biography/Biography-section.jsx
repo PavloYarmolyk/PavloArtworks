@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 export default function Bio() {
   const pageQuery = useStaticQuery(graphql`
     query {
-      markdownRemark(id: { eq: "2c894460-c959-5376-99bd-815d7d745032" }) {
+      markdownRemark(id: { eq: "2b19a414-619e-5118-ba6e-d1b2c1a81111" }) {
         id
         frontmatter {
           title
@@ -25,10 +25,7 @@ export default function Bio() {
       }
     }
   `);
-
-  const {
-    markdownRemark: { frontmatter, html },
-  } = pageQuery;
+  const { markdownRemark: { frontmatter, html }} = pageQuery;
   const image = getImage(frontmatter.bioImage);
   return (
     <>
