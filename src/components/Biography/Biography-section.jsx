@@ -29,13 +29,12 @@ export default function Bio() {
       }
     }
   `);
-  const node = pageQuery.allMarkdownRemark.edges[0].node;
+  const node = pageQuery.allMarkdownRemark.edges[0];
   console.log(JSON.stringify(node));
-  const json = JSON.stringify(node, null, 2);
 
 
 
-  const { frontmatter, html } = node;
+  const { frontmatter, html } = node.node;
 
   const image = getImage(frontmatter.bioImage);
 
