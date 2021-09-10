@@ -29,12 +29,15 @@ export default function Bio() {
       }
     }
   `);
-  const node = pageQuery.allMarkdownRemark.edges[0];
-  console.log(JSON.stringify(node));
+  const data = pageQuery.allMarkdownRemark.edges[0];
+  // console.log(JSON.stringify(data));
 
 
 
-  const { frontmatter, html } = node.node;
+  const {
+    node: { frontmatter, html },
+  } = data;
+  console.log(frontmatter)
 
   const image = getImage(frontmatter.bioImage);
 
