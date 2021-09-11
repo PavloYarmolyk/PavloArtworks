@@ -7,14 +7,14 @@ media_folder: src/images
 public_folder: ../images
 
 collections:
-  - name: bio
+  - name: Bio
     label: Bio
     folder: src/markdown-pages
     create: true
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string'}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
@@ -23,20 +23,20 @@ collections:
           widget: 'image',
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
-      - { label: 'Description', name: 'excerpt' },
+      - { label: 'Description', name: 'excerpt' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
-  - name: art-works
-    label: Art works
+  - name: artwork
+    label: Artwork
     folder: src/markdown-pages/artworks
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
       - {
           label: 'Slug',
           name: 'slug',
           widget: 'string',
-          hint: 'Always use: /blog/page-name  No spaces between. For ex: /blog/sports-massage',
+          hint: 'Always use: /artworks/page-name  No spaces between.',
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
