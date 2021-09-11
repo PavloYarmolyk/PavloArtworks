@@ -7,8 +7,8 @@ import { graphql, useStaticQuery } from 'gatsby';
 const Bio = () => {
   const pageQuery = useStaticQuery(
     graphql`
-      query {
-        allMarkdownRemark(filter: { id: { eq: "2b19a414-619e-5118-ba6e-d1b2c1a81111" } }) {
+      {
+        allMarkdownRemark {
           edges {
             node {
               id

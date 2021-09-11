@@ -5,6 +5,7 @@ import heroData from "../../mock/hero.json"
 
 const Hero = () => (
   <div id="home" className="hero-wrapper">
+    
     <div className="overlay"></div>
     <div className="hero-message-wrapper">
       <Fade bottom duration={100} distance="30px">
