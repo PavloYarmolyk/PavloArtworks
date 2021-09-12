@@ -10,7 +10,7 @@ collections:
   - name: Bio
     label: Bio
     folder: src/bio
-    create: true
+    create: false
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio' }
