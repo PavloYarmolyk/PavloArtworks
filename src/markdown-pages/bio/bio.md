@@ -1,12 +1,14 @@
 ---
-layout: biography
-slug: /biography/bio
-date: 2021-08-22T12:19:12.994Z
-title: Pavlo Yarmolyk
-bioImage: ../images/bio.webp
 excerpt: "Graduated Lviv National Academy of Fine Arts in 2009. I work in
   different types of fine arts: installation, sculpture, mosaics, restoration,
   but primarily in panel and monumental painting."
+layout: biography
+slug: /biography/bio
+date: 2021-08-22T12:19:12.994Z
+BioSlug: bio
+BioTitle: Pavlo Yarmolyk
+bioImage: ../images/bio.webp
+title: Pavlo Yarmolyk
 ---
 <p class='main-bio'>Graduated Lviv National Academy of Fine Arts in 2009. I work in different types of fine arts: installation, sculpture, mosaics, restoration, but primarily in panel and monumental painting.
 
