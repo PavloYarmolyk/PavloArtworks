@@ -1,8 +1,8 @@
 import React from 'react';
-import '../style/main.scss';
-import Biography from '../components/Biography/Biography-section';
-import PageWrapper from '../components/Shared/pageWrapper';
 import Seo from '../components/Shared/Seo';
+import PageWrapper from '../components/Shared/pageWrapper';
+import Biography from '../components/Biography/Biography-section';
+import '../style/main.scss';
 
 const BioPage = () => {
   return (

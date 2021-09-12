@@ -11,6 +11,16 @@ const SEO = ({ title, description, image, article }) => {
   const { defaultTitle, defaultDescription, siteUrl, banner, ogLanguage, siteLanguage } =
     site.siteMetadata;
 
+  const preparePathname = () =>
+    pathname
+      .match(/[a-z]+/g)
+      .toString()
+      .replace(/\w/, firstLetter => firstLetter.toUpperCase());
+  ;
+
+  let titleComplete = pathname === '/' ? 'Home' : preparePathname();
+
+
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
@@ -22,7 +32,7 @@ const SEO = ({ title, description, image, article }) => {
   return (
     <Helmet>
       <html lang={seo.lang} />
-      <title>{seo.title}</title>
+      <title>{`Pavlo Yarmolyk || ${titleComplete}`}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

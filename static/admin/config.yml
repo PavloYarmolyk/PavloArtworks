@@ -39,9 +39,9 @@ collections:
           widget: 'image',
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
-      - { label: 'Short Description', name: 'Short description' }
+      - { label: 'ShortDescription', name: 'excerpt' }
       - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Separate by comma' }
-      - { label: 'Full Description', name: 'Full description' }
+      - { label: 'Description', name: 'Full description' }
       - label: 'Slider'
         name: 'sliderImage'
         widget: list
@@ -70,8 +70,6 @@ collections:
           - { label: 'phone_Number', name: 'phone_Number', widget: 'text' }
           - { label: Facebook Page, name: fbLink, widget: string }
           - { label: 'Instagram Page', name: 'instaLink', widget: 'text' }
-          - { label: Logo, name: logo, widget: image }
-          - { label: Logo_Description, name: alt, widget: string }
       - label: 'Header Info'
         name: 'header'
         file: 'src/mock/header.json'

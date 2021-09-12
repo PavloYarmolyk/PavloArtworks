@@ -1,13 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'gatsby';
-import AboutImg from '../Image/AboutImg';
 import footerData from '../../mock/footer.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const imgRegEx = /(\w+\.\w+)/g;
-
-const { email, phone_Number, fbLink, instaLink, logo, alt } = footerData;
+const { email, phone_Number, fbLink, instaLink } = footerData;
 
 const linkToMail = `mailto:${email}`;
 const linkToWhatsapp = `https://api.whatsapp.com/send?phone=${phone_Number}`;
@@ -40,7 +37,7 @@ const Footer = ({ linkTo }) => {
                 All Rights Reserved{' '}
                 <Link
                   id="dev-by"
-                  to="/about-us/#staffDanylo"
+                  to="/biography"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -58,10 +55,10 @@ const Footer = ({ linkTo }) => {
                 <br />
                 <span id="share-buttons">
                   <a href={fbLink} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                   </a>
                   <a href={instaLink} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                    <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
                   </a>
                 </span>
               </p>
@@ -103,11 +100,11 @@ const Footer = ({ linkTo }) => {
             <a href={fbLink} className="col-xs-3" rel="noopener noreferrer" target="_blank">
               <span className="fa fa-2x fa-facebook"></span>
             </a>
+            <a href={instaLink} target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
             <a href={linkToMail} rel="noopener noreferrer" target="_blank">
               <span className="fa fa-2x fa-at"></span>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <span className="fa fa-2x fa-map-marker"></span>
             </a>
           </div>
         </Row>
