@@ -52,8 +52,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages-artworks`,
-        path: `${__dirname}/src/markdown-pages/artworks`,
+        name: `markdown`,
+        path: `${__dirname}/src/markdown-pages/artworks/markdown`,
       },
     },
     `gatsby-plugin-sharp`,

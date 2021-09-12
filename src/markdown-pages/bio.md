@@ -1,6 +1,6 @@
 ---
 layout: biography
-slug: /biography/test
+slug: /biography/bio
 date: 2021-08-22T12:19:12.994Z
 title: Pavlo Yarmolyk
 bioImage: ../images/bio.webp
