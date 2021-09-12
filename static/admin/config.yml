@@ -14,7 +14,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio' }
-      - { label: 'Slug', name: 'slug', widget: 'string'}
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
@@ -32,16 +32,12 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
-      - {
-          label: 'Slug',
-          name: 'slug',
-          widget: 'string',
-        }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
-          label: 'Featured-Image',
-          name: 'featured',
+          label: 'bioImage-Image',
+          name: 'bioImage',
           widget: 'image',
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
