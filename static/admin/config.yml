@@ -14,36 +14,44 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug', name: 'BioSlug', widget: 'string'}
+      - { label: 'BioTitle', name: 'BioTitle', widget: 'string' }
       - {
           label: 'Bio Image',
           name: 'bioImage',
           widget: 'image',
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
-      - { label: 'Description', name: 'excerpt' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main Bio info goes here.' }
   - name: artwork
     label: Artwork
-    folder: src/markdown-pages/artworks/markdown
+    folder: src/markdown-pages
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Title', name: 'title', widget: 'string' }
       - {
-          label: 'bioImage-Image',
-          name: 'bioImage',
+          label: 'Slug',
+          name: 'slug',
+          widget: 'string',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Featured-Image',
+          name: 'featured',
           widget: 'image',
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
-      - { label: 'Description', name: 'excerpt' }
+      - { label: 'Short Description', name: 'Short description' }
       - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Separate by comma' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+      - { label: 'Full Description', name: 'Full description' }
+      - label: 'Slider'
+        name: 'sliderImage'
+        widget: list
+        fields:
+          - {label: Image, name: image, widget: image}
+      - { label: 'Additional Description', name: 'AdditionalDescription', required: false  }
   - label: 'Pages'
     name: 'pages'
     files:
