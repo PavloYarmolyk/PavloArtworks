@@ -9,7 +9,7 @@ public_folder: ../images
 collections:
   - name: Bio
     label: Bio
-    folder: src/markdown-pages/bio
+    folder: src/bio
     create: true
     slug: '{{slug}}'
     fields:
@@ -25,7 +25,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main Bio info goes here.' }
   - name: artwork
     label: Artwork
-    folder: src/markdown-pages/artworks
+    folder: src/artworks
     create: true
     slug: 'artworks/{{slug}}'
     fields:

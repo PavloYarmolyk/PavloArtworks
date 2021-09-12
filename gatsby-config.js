@@ -46,14 +46,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `bio`,
-        path: `${__dirname}/src/markdown-pages/bio`,
+        path: `${__dirname}/src//bio`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `artworks`,
-        path: `${__dirname}/src/markdown-pages/artworks`,
+        path: `${__dirname}/src//artworks`,
       },
     },
     `gatsby-plugin-sharp`,
