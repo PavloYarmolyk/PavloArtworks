@@ -9,12 +9,12 @@ public_folder: ../images
 collections:
   - name: Bio
     label: Bio
-    folder: src/markdown-pages
+    folder: src/markdown-pages/bio
     create: true
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'bio' }
-      - { label: 'Slug', name: 'BioSlug', widget: 'string'}
+      - { label: 'Slug', name: 'BioSlug', widget: 'string' }
       - { label: 'BioTitle', name: 'BioTitle', widget: 'string' }
       - {
           label: 'Bio Image',
@@ -25,16 +25,12 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main Bio info goes here.' }
   - name: artwork
     label: Artwork
-    folder: src/markdown-pages
+    folder: src/markdown-pages/artworks
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: 'artworks/{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
-      - {
-          label: 'Slug',
-          name: 'slug',
-          widget: 'string',
-        }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - {
@@ -50,8 +46,8 @@ collections:
         name: 'sliderImage'
         widget: list
         fields:
-          - {label: Image, name: image, widget: image}
-      - { label: 'Additional Description', name: 'AdditionalDescription', required: false  }
+          - { label: Image, name: image, widget: image }
+      - { label: 'Additional Description', name: 'AdditionalDescription', required: false }
   - label: 'Pages'
     name: 'pages'
     files:
