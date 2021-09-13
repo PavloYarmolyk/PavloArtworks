@@ -52,7 +52,7 @@ collections:
     label: Painting
     folder: src/Artwork_paintings
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}-{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
