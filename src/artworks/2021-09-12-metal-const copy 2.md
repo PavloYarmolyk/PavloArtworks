@@ -1,22 +1,37 @@
 ---
-layout: artwork
-slug: artwork/metal-const
-title: Metal const
-date: 2021-09-12T13:03:53.433Z
-featured: ../images/001_metal-compos_003.webp
 excerpt: For the elite tennis player, showing up to every match
   alert,   refreshed and at the top of your game is essential for success. One
   key   component to on-court success is the use of recovery massage.
-tags:
-  - tagone
-  - ""
+layout: artwork
+slug: artwork/metal-composition
+title: Wheel and Wheel parts
+date: 2009-07-01T13:03:53.433Z
+made_of_and_where: metal, bicycles, welding, 200х300
 Full description: Full description
+featured: ../images/001_metal-compos_003.webp
+tags:
+  - metal-composition
+  - ""
 sliderImage:
   - image: ../images/001_metal-compos_001.webp
   - image: ../images/001_metal-compos_002.webp
+  - image: ../images/001_metal-compos_004.webp
+  - image: ../images/001_metal-compos_005.webp
+  - image: ../images/001_metal-compos_006.webp
+  - image: ../images/001_metal-compos_007.webp
+  - image: ../images/001_metal-compos_008.webp
+  - image: ../images/001_metal-compos_009.webp
+  - image: ../images/001_metal-compos_010.webp
+  - image: ../images/001_metal-compos_011.webp
+  - image: ../images/001_metal-compos_012.webp
 ---
-<!--StartFragment-->
+The composition of metal parts of old bicycles and other metal parts is transformed into the shape of a creature.
 
-Calling all golfers!  Did you know that therapeutic sports massage is a great way to improve your golf game? It’s true!  Golf massage concentrates on relaxing the back, hamstrings, hip flexors, shoulders, and wrists to create a bigger shoulder turn, better hip and back flexibility, and a more powerful torque and higher finish.  So, no matter your level of play - from avid golfer to the occasional player - massage for golfers is a great way to improve your game.
 
-<!--EndFragment-->
+The wheel in front of it symbolizes the eye.
+
+
+Symbolizes movement as a way of seeing the world, a whirlwind of events that captures everything around.
+
+
+The metal composition was created through the author's passion for cycling.
