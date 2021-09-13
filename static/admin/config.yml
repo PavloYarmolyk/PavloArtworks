@@ -27,7 +27,7 @@ collections:
     label: Special Art
     folder: src/Artwork_specialArt
     create: true
-    slug: 'artworks/{{slug}}'
+    slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
@@ -52,7 +52,7 @@ collections:
     label: Painting
     folder: src/Artwork_paintings
     create: true
-    slug: 'artworks/{{slug}}'
+    slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
