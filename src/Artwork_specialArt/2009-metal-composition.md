@@ -11,7 +11,6 @@ Full description: Full description
 featured: ../images/001_metal-compos_003.webp
 tags:
   - metal-composition
-  - ""
 sliderImage:
   - image: ../images/001_metal-compos_001.webp
   - image: ../images/001_metal-compos_002.webp

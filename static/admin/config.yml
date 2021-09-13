@@ -23,9 +23,34 @@ collections:
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main Bio info goes here.' }
-  - name: artwork
-    label: Artwork
-    folder: src/artworks
+  - name: specialArt
+    label: Special Art
+    folder: src/Artwork_specialArt
+    create: true
+    slug: 'artworks/{{slug}}'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Featured-Image',
+          name: 'featured',
+          widget: 'image',
+          hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
+        }
+      - { label: 'Made of and Where', name: 'made_of_and_where' }
+      - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Separate by comma' }
+      - label: 'Slider'
+        name: 'sliderImage'
+        widget: list
+        fields:
+          - { label: Image, name: image, widget: image }
+      - { label: 'Description', name: 'body', widget: 'markdown', required: false }
+      - { label: 'Additional Description', name: 'AdditionalDescription', required: false }
+  - name: painting
+    label: Painting
+    folder: src/Artwork_paintings
     create: true
     slug: 'artworks/{{slug}}'
     fields:
