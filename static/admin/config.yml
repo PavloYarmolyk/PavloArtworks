@@ -39,16 +39,15 @@ collections:
           widget: 'image',
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
-      - { label: 'Short Description', name: 'excerpt' }
+      - { label: 'Made of and Where', name: 'made_of_and_where' }
       - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Separate by comma' }
-      - { label: 'Description', name: 'Full description' }
       - label: 'Slider'
         name: 'sliderImage'
         widget: list
         fields:
           - { label: Image, name: image, widget: image }
+      - { label: 'Description', name: 'body', widget: 'markdown', required: false }
       - { label: 'Additional Description', name: 'AdditionalDescription', required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: 'Pages'
     name: 'pages'
     files:
