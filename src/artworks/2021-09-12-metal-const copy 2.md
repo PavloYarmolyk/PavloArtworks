@@ -15,3 +15,8 @@ sliderImage:
   - image: ../images/001_metal-compos_001.webp
   - image: ../images/001_metal-compos_002.webp
 ---
+<!--StartFragment-->
+
+Calling all golfers!  Did you know that therapeutic sports massage is a great way to improve your golf game? It’s true!  Golf massage concentrates on relaxing the back, hamstrings, hip flexors, shoulders, and wrists to create a bigger shoulder turn, better hip and back flexibility, and a more powerful torque and higher finish.  So, no matter your level of play - from avid golfer to the occasional player - massage for golfers is a great way to improve your game.
+
+<!--EndFragment-->
