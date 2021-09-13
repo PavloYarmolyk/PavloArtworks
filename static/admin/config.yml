@@ -39,7 +39,7 @@ collections:
           widget: 'image',
           hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
         }
-      - { label: 'ShortDescription', name: 'excerpt' }
+      - { label: 'Short Description', name: 'excerpt' }
       - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Separate by comma' }
       - { label: 'Description', name: 'Full description' }
       - label: 'Slider'
@@ -48,6 +48,7 @@ collections:
         fields:
           - { label: Image, name: image, widget: image }
       - { label: 'Additional Description', name: 'AdditionalDescription', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: 'Pages'
     name: 'pages'
     files:
