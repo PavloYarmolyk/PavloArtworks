@@ -1,6 +1,6 @@
 ---
 layout: artwork
-slug: abstract-compositions
+slug: abstract-compositions/
 title: Abstract compositions
 date: 2014-01-01T23:12:30.314Z
 featured: ../images/005_003_Abstract-Compositions_001.jpg

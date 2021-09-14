@@ -1,6 +1,6 @@
 ---
 layout: artwork
-slug: wall-paintings
+slug: wall-paintings/
 title: Wall paintings
 date: 2021-09-13T21:56:23.250Z
 featured: ../images/004_wall-painting_009.jpg

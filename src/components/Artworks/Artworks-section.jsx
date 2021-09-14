@@ -2,7 +2,7 @@ import React from 'react';
 import { Zoom } from 'react-reveal';
 import { Container, Col, Row } from 'react-bootstrap';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 const Artworkslist = () => {
   const pageQuery = useStaticQuery(
@@ -36,7 +36,7 @@ const Artworkslist = () => {
                 }
                 Full_description
               }
-              excerpt(pruneLength: 250)
+              excerpt(pruneLength: 100)
             }
           }
         }
@@ -54,12 +54,14 @@ const Artworkslist = () => {
           <Col md={4}>
             <div className="artworks-list-intro">
               <Zoom duration={500} delay={10}>
-                <GatsbyImage
-                  className="rounded shadow-lg"
-                  image={image}
-                  alt={edge.node.frontmatter.title}
-                />
-                <h1 className="artworks-list-title">{edge.node.frontmatter.title}</h1>
+                <Link to={`${edge.node.frontmatter.slug}`}>
+                  <GatsbyImage
+                    className="rounded shadow-lg"
+                    image={image}
+                    alt={edge.node.frontmatter.title}
+                  />
+                  <h1 className="artworks-list-title">{edge.node.frontmatter.title}</h1>
+                </Link>
               </Zoom>
               <hr />
               <p>{edge.node.excerpt}</p>
