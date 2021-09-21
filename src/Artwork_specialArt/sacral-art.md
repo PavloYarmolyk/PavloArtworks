@@ -1,6 +1,6 @@
 ---
 layout: artwork
-slug: sacral-art/
+slug: artworks/sacral-art
 title: Sacral Art
 date: 2009-01-01T22:50:25.821Z
 featured: ../images/003_Sacral-Art_002.jpg

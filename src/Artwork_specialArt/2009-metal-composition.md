@@ -3,7 +3,7 @@ excerpt: For the elite tennis player, showing up to every match
   alert,   refreshed and at the top of your game is essential for success. One
   key   component to on-court success is the use of recovery massage.
 layout: artwork
-slug: metal-composition/
+slug: artworks/metal-composition
 title: Wheel and Wheel parts
 date: 2009-07-01T13:03:53.433Z
 made_of_and_where: metal, bicycles, welding, 200х300

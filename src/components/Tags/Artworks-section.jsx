@@ -14,7 +14,6 @@ const Artworkslist = () => {
             node {
               id
               frontmatter {
-                tags
                 title
                 slug
                 date(formatString: "MMMM DD, YYYY")
@@ -46,28 +45,6 @@ const Artworkslist = () => {
     `
   );
   const edges = pageQuery.allMarkdownRemark.edges;
-
-  const AllTagsComponent = edges.map(edge => {
-    const linkToArtwork = edge.node.frontmatter.tags;
-    console.log(linkToArtwork);
-    return (
-      <>
-        <Col md={4}>
-          <div className="artworks-list-intro">
-            <Zoom duration={500} delay={10}>
-
-              {/* <Link to={linkToArtwork}>
-                <h1 className="artworks-list-title">{edge.node.frontmatter.tags}</h1>
-              </Link> */}
-            </Zoom>
-            <hr />
-            <p>{edge.node.excerpt}</p>
-          </div>
-          {/* <div className="artworks-list-content" dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
-        </Col>
-      </>
-    );
-  });
 
   const ArtworksListComponent = edges
     .filter(edge => !!edge.node.frontmatter.featured)
@@ -101,7 +78,6 @@ const Artworkslist = () => {
       <div id="top" />
       <div className="artworks-list-bg" />
       <div className="overlay" />
-      <Row>{AllTagsComponent}</Row>
       <Row className="artworks-list-message-wrapper">
         {ArtworksListComponent}
         {/* <div className="artworks-list-content" dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}

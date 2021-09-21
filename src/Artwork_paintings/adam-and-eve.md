@@ -1,6 +1,6 @@
 ---
 layout: artwork
-slug: adam-and-eve/
+slug: artworks/adam-and-eve
 title: Adam and Eve
 date: 2018-01-01T23:03:45.826Z
 featured: ../images/005_001_Adam-and-Eve_001.jpg

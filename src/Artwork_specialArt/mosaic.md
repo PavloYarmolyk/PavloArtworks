@@ -1,6 +1,6 @@
 ---
 layout: artwork
-slug: mosaic/
+slug: artworks/mosaic
 title: Mosaic
 date: 2014-01-01T22:43:31.872Z
 featured: ../images/002_mosaic_004.jpg
