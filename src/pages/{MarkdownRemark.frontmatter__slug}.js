@@ -15,7 +15,7 @@ export default function BlogTemplate({ data }) {
     <>
       <Seo />
       <PageWrapper footerLinkTo="#name">
-        {frontmatter.featured.name && <GatsbyImage image={image} alt={frontmatter.featured.name} />}
+        {image && <GatsbyImage image={image} alt={frontmatter.featured.name} />}
       </PageWrapper>
     </>
   );
