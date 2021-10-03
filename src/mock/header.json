@@ -5,7 +5,7 @@
   "menu_tab": [
     {
       "nav_title": "Home",
-      "nav_link": "/"
+      "nav_link": "/home"
     },
     {
       "nav_title": "Blog",

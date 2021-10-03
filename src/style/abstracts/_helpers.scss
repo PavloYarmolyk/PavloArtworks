@@ -3,6 +3,14 @@
   margin-bottom: 8rem !important;
 }
 
+.align-left {
+  text-align: initial !important;
+}
+
+.white {
+  color: $white-color;
+}
+
 // Scroll Reveal UX
 .load-hidden {
   visibility: hidden;

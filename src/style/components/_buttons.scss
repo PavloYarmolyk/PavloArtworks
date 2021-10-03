@@ -55,30 +55,30 @@
   }
 }
 /* Resume Style */
-.cta-btn--pres {
-  color: $alfa-secondary-color;
+.cta-btn--filter {
+  color: $white-color;
   border: 1px solid $alfa-secondary-color;
-  font-size: 0.611em;
+  font-size: 1.2em;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2em;
-  letter-spacing: 2.2px;
+  letter-spacing: 2.9px;
+  max-width: 24rem;
+  padding: 7px;
+  margin: 5px;
 
-  .fa-whatsapp {
-    position: relative;
-    top: 1.5px;
-    font-size: 1.5em;
-    color: inherit;
-  }
   @include respond(tab-land) {
-    font-size: 1rem;
-  }
-  @include respond(tab-port) {
+      max-width: 20rem;
+      font-size: 1rem;
+    }
+    @include respond(tab-port) {
+    max-width: 15rem;
     font-size: 0.85rem;
     padding: 0.7rem;
   }
   @include respond(phone) {
-    font-size: 1.2rem;
+    max-width: 10rem;
+    font-size: 0.85rem;
     padding: 0.9rem;
   }
   @include respond(phone-xs) {

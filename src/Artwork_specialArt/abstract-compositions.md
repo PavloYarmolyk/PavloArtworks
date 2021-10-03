@@ -6,7 +6,7 @@ date: 2014-01-01T23:12:30.314Z
 featured: ../images/005_003_Abstract-Compositions_001.jpg
 made_of_and_where: Board, levkas, tempera, pigment, acrylic, gold, steel. 105x25 and 80x80. Lviv.
 tags:
-  - paintings
+  - abstract compositions
 sliderImage:
   - image: ../images/005_003_Abstract-Compositions_001.jpg
   - image: ../images/005_003_Abstract-Compositions_002.jpg

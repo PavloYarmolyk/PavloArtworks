@@ -15,7 +15,13 @@ const activeLinkStyles = {
 };
 
 const NavLink = ({ children, to }) => (
-  <Link className="nav-link" to={to} activeStyle={activeLinkStyles} style={linkStyles}>
+  <Link
+    className="nav-link"
+    to={to}
+    activeStyle={activeLinkStyles}
+    partiallyActive={true}
+    style={linkStyles}
+  >
     {children}
   </Link>
 );

@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby';
 
-const Artworkslist = () => {
+const ArtworksListComponent = () => {
   const pageQuery = useStaticQuery(
     graphql`
       {
@@ -14,6 +14,7 @@ const Artworkslist = () => {
             node {
               id
               frontmatter {
+                tags
                 title
                 slug
                 date(formatString: "MMMM DD, YYYY")
@@ -36,6 +37,7 @@ const Artworkslist = () => {
                   }
                 }
                 Full_description
+                made_of_and_where
               }
               excerpt(pruneLength: 100)
             }
@@ -45,8 +47,7 @@ const Artworkslist = () => {
     `
   );
   const edges = pageQuery.allMarkdownRemark.edges;
-
-  const ArtworksListComponent = edges
+  const ArtworkListComponent = edges
     .filter(edge => !!edge.node.frontmatter.featured)
     .map(edge => {
       const image = getImage(edge.node.frontmatter.featured);
@@ -58,32 +59,23 @@ const Artworkslist = () => {
               <Zoom duration={500} delay={10}>
                 <Link to={linkToArtwork}>
                   <GatsbyImage
-                    className="rounded shadow-lg"
+                    className="artworks-list-image rounded shadow-lg"
                     image={image}
                     alt={edge.node.frontmatter.title}
                   />
-                  <h1 className="artworks-list-title">{edge.node.frontmatter.title}</h1>
+                  <h4 className="artworks-list-title">{edge.node.frontmatter.title}</h4>
                 </Link>
               </Zoom>
-              <hr />
-              <p>{edge.node.excerpt}</p>
+              <div className="artworks-list-date">{edge.node.frontmatter.date}</div>
+              <p className="artworks-list-about">{edge.node.frontmatter.made_of_and_where}</p>
             </div>
             {/* <div className="artworks-list-content" dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
           </Col>
         </>
       );
     });
-  return (
-    <Container fluid>
-      <div id="top" />
-      <div className="artworks-list-bg" />
-      <div className="overlay" />
-      <Row className="artworks-list-message-wrapper">
-        {ArtworksListComponent}
-        {/* <div className="artworks-list-content" dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
-      </Row>
-    </Container>
-  );
+
+  return ArtworkListComponent;
 };
 
-export default Artworkslist;
+export default ArtworksListComponent;
