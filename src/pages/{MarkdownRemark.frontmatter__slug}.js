@@ -12,7 +12,7 @@ export default function BlogTemplate({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   const image = getImage(frontmatter.featured);
-  const name = frontmatter.featured.name;
+  const name = frontmatter.featured ? frontmatter.featured.name : '';
   return (
     <>
       <Seo />

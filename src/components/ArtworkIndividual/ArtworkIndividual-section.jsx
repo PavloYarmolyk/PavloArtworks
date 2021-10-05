@@ -12,9 +12,9 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
   const rawSlderImages = frontmatter.sliderImage;
   console.log(rawSlderImages);
 
-  const imagesArray = rawSlderImages[0].image.childImageSharp
+  const imagesArray = rawSlderImages
     ? rawSlderImages.map(image => image.image.childImageSharp.gatsbyImageData.images.fallback.src)
-    : '';
+    : [];
 const images = imagesArray.map(imageSl => ({
   src: `${imageSl}`,
 }));
