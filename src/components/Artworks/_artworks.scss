@@ -11,19 +11,95 @@
   bottom: 0;
   z-index: -1;
   background-attachment: fixed;
-  background: center / 5% repeat url('../images/a-web-of-bright-red-dots-connected-by-lines-against-a-black-background.jpg');
+  background: center / 5% repeat
+    url('../images/a-web-of-bright-red-dots-connected-by-lines-against-a-black-background.jpg');
   @include respond(phone) {
     background-attachment: fixed;
-    background: center / 10% repeat url('../images/a-web-of-bright-red-dots-connected-by-lines-against-a-black-background.jpg');
+    background: center / 10% repeat
+      url('../images/a-web-of-bright-red-dots-connected-by-lines-against-a-black-background.jpg');
   }
 }
+.filter-header {
+  margin: 100px auto 10px;
+  padding: 0;
+  color: $white-color;
+}
 .artworks-filter-wrapper {
+  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
-  background: center / 10% repeat url('../images/a-web-of-bright-red-dots-connected-by-lines-against-a-black-background.jpg');;
-  padding: 15px;
-  margin: 100px auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
   z-index: 5;
+
+  .cta-btn--filter {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem $default-font-size;
+    font-weight: 500;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    font-size: 1.2rem;
+    color: $grey;
+    cursor: pointer;
+    width: 320px;
+    margin: 10px;
+    border: 2px solid $primary-color;
+    letter-spacing: 0.1em;
+
+    @include respond(tab-land) {
+      font-size: 1.2rem;
+      margin: 5px;
+      max-width: 100%;
+    }
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+      padding: 0.7rem;
+      max-width: 70%;
+      font-size: 1rem;
+    }
+    @include respond(phone) {
+      font-size: 1.2rem;
+      padding: 0.5rem 0.7rem;
+      max-width: 46%;
+      font-size: 0.9rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0px;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+      background-image: linear-gradient(
+        135deg,
+        $alfa-secondary-color 0%,
+        $primary-color 38%,
+        $primary-color 58%,
+        $alfa-secondary-color 100%
+      );
+      @include respond(phone) {
+        background-image: none;
+      }
+    }
+
+    &:hover {
+      -webkit-text-fill-color: $white-color;
+      color: $white-color;
+      text-decoration: none;
+      border: 2px solid transparent;
+      @include respond(tab-port) {
+        -webkit-text-fill-color: $alfa-secondary-color;
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
 }
 .artworks-list-message-wrapper {
   max-width: 100vw;
@@ -50,10 +126,16 @@
     margin: 2rem;
   }
   .artworks-list-title {
+    font-family: $font-limelight;
     max-height: 3.5ch;
     font-size: 2em;
     padding: 5px;
     overflow: hidden;
+  }
+  .artworks-list-date,
+  .artworks-list-about {
+    color: $grey;
+    letter-spacing: 0.1em;
   }
   .artworks-list-content {
     text-align: justify;
@@ -91,95 +173,18 @@
   opacity: 0.3;
   z-index: -1;
 }
-//   //artworks-list buttons wrapper
-//   .artworks-list-cta {
-//     display: flex;
-//     justify-content: space-evenly;
-//     flex-direction: row;
-//     font-size: 1.3rem;
-//     @include respond(phone) {
-//       flex-direction: column;
-//       align-items: center;
-//     }
-
-//     & a {
-//       font-size: 1em;
-//       padding: 20px;
-//       @include respond(tab-land) {
-//         font-size: 1.5rem;
-//         padding: 3px;
-//       }
-//       @include respond(phone) {
-//         font-size: 1rem;
-//       }
-//     }
-//     /* artworks-list Style */
-//     .cta-btn--artworks-list {
-//       background-clip: text;
-//       -webkit-background-clip: text;
-//       -webkit-text-fill-color: transparent;
-//       border-width: 2px;
-//       border-style: solid;
-//       border-image: linear-gradient(
-//         to right,
-//         $alfa-secondary-color 0%,
-//         $primary-color 38%,
-//         $primary-color 58%,
-//         $alfa-secondary-color 100%
-//       );
-//       background-image: linear-gradient(
-//         to right,
-//         $alfa-secondary-color 0%,
-//         $primary-color 38%,
-//         $primary-color 58%,
-//         $alfa-secondary-color 100%
-//       );
-//       border-image-slice: 1;
-//       cursor: pointer;
-//       width: 250px;
-//       margin: 10px;
-
-//       // Responsive Button artworks-list style
-//       @include respond(tab-land) {
-//         max-width: 100%;
-//       }
-//       @include respond(tab-port) {
-//         max-width: 90%;
-//       }
-//       @include respond(phone) {
-//         max-width: 60%;
-//         background-image: none;
-//         border: 2px solid $primary-color;
-//         -webkit-text-fill-color: $primary-color;
-//       }
-
-//       &::after {
-//         background-image: linear-gradient(
-//           135deg,
-//           $alfa-secondary-color 0%,
-//           $primary-color 38%,
-//           $primary-color 58%,
-//           $alfa-secondary-color 100%
-//         );
-//         // Responsive Button artworks-list style
-//         @include respond(phone) {
-//           background-image: none;
-//         }
-//       }
-
-//       &:hover {
-//         -webkit-text-fill-color: $white-color;
-//         text-decoration: none;
-//         // Responsive Button hover artworks-list style
-//         @include respond(tab-port) {
-//           -webkit-text-fill-color: $alfa-secondary-color;
-//         }
-
-//         &::after {
-//           width: 100%;
-//         }
-//       }
-//     }
-//   }
-
-// }
+.filter-container {
+  position: relative;
+  .closed {
+    position: absolute;
+    top: -550px;
+    opacity: 0;
+    transition: top 1s, opacity 3s;
+  }
+  .opened {
+    transition: top 1s;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+  }
+}

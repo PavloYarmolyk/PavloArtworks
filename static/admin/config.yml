@@ -47,7 +47,7 @@ collections:
         fields:
           - { label: Image, name: image, widget: image }
       - { label: 'Description', name: 'body', widget: 'markdown', required: false }
-      - { label: 'Additional Description', name: 'AdditionalDescription', required: false }
+      - { label: 'Additional Description', name: 'additionalDescription', required: false }
   - name: painting
     label: Painting
     folder: src/Artwork_paintings
@@ -55,7 +55,7 @@ collections:
     slug: '{{year}}-{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'artwork' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'artworks/artwork-name' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - {
@@ -72,7 +72,7 @@ collections:
         fields:
           - { label: Image, name: image, widget: image }
       - { label: 'Description', name: 'body', widget: 'markdown', required: false }
-      - { label: 'Additional Description', name: 'AdditionalDescription', required: false }
+      - { label: 'Additional Description', name: 'additionalDescription', required: false }
   - label: 'Pages'
     name: 'pages'
     files:

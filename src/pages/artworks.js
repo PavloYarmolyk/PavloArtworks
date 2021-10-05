@@ -8,7 +8,7 @@ const ArtworksPage = () => {
   return (
     <>
       <Seo />
-      <PageWrapper footerLinkTo="#name">
+      <PageWrapper footerLinkTo="#top">
         <Artworks />
       </PageWrapper>
     </>

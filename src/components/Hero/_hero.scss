@@ -9,12 +9,10 @@
   padding: 0rem 5rem;
   z-index: 0;
   overflow: hidden;
-  background: center / cover no-repeat
-    url("../images/hero-gallery-desktop.webp");
+  background: center / cover no-repeat url('../images/hero-gallery-desktop.webp');
 
   @include respond(phone) {
-    background: center / cover no-repeat
-      url("../images/hero-gallery-mobile.webp");
+    background: center / cover no-repeat url('../images/hero-gallery-mobile.webp');
   }
   .hero-message-wrapper {
     display: flex;
@@ -59,7 +57,7 @@
       text-align: center;
       letter-spacing: 6.8px;
       margin: 0.5rem;
-      
+
       @include respond(tab-land) {
         font-size: 7rem;
       }
@@ -78,6 +76,9 @@
         font-size: 3em;
         font-weight: 400;
         margin-bottom: 5rem;
+        padding: 9px;
+        border-radius: 5px;
+        color: lighten($alfa-secondary-color, 15%);
         @include respond(tab-land) {
           font-size: 2.7rem;
         }
@@ -91,6 +92,39 @@
           font-size: 1.2rem;
         }
       }
+    }
+  }
+  .cta-btn {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem $default-font-size;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    font-size: 1.9rem;
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+      padding: 0.7rem;
+    }
+    @include respond(phone) {
+      font-size: 1.2rem;
+      padding: 0.5rem 0.7rem;
+    }
+    @include respond(phone-xs) {
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0px;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
     }
   }
   //hero buttons wrapper
@@ -107,6 +141,9 @@
     & a {
       font-size: 1em;
       padding: 20px;
+      font-family: Montserrat;
+      font-weight: 300;
+      letter-spacing: 0.3em;
       @include respond(tab-land) {
         font-size: 1.5rem;
         padding: 3px;
@@ -117,31 +154,11 @@
     }
     /* Hero Style */
     .cta-btn--hero {
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      border-width: 2px;
-      border-style: solid;
-      border-image: linear-gradient(
-        to right,
-        $alfa-secondary-color 0%,
-        $primary-color 38%,
-        $primary-color 58%,
-        $alfa-secondary-color 100%
-      );
-      background-image: linear-gradient(
-        to right,
-        $alfa-secondary-color 0%,
-        $primary-color 38%,
-        $primary-color 58%,
-        $alfa-secondary-color 100%
-      );
-      border-image-slice: 1;
+      color: white;
       cursor: pointer;
-      width: 250px;
+      width: 290px;
       margin: 10px;
-
-      // Responsive Button hero style
+      border: 2px solid $primary-color;
       @include respond(tab-land) {
         max-width: 100%;
       }
@@ -150,9 +167,6 @@
       }
       @include respond(phone) {
         max-width: 60%;
-        background-image: none;
-        border: 2px solid $primary-color;
-        -webkit-text-fill-color: $primary-color;
       }
 
       &::after {
@@ -172,6 +186,7 @@
       &:hover {
         -webkit-text-fill-color: $white-color;
         text-decoration: none;
+        border: 2px solid transparent;
         // Responsive Button hover hero style
         @include respond(tab-port) {
           -webkit-text-fill-color: $alfa-secondary-color;

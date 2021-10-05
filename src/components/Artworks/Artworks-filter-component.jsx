@@ -35,13 +35,16 @@ const ArtworksFilterComponent = () => {
   } = data;
 
   const ArtworkFilterComponent = group.map(tag => {
-    console.log(tag);
     return (
-      <span key={tag.fieldValue} className="cta-btn cta-btn--filter">
-        <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-          {tag.fieldValue} ({tag.totalCount})
-        </Link>
-      </span>
+      <Link
+        key={tag.fieldValue}
+        to={`/tags/${kebabCase(tag.fieldValue)}/`}
+        activeStyle={{ color: 'white' }}
+        partiallyActive={true}
+        className="cta-btn--filter"
+      >
+        {tag.fieldValue} ({tag.totalCount})
+      </Link>
     );
   });
 

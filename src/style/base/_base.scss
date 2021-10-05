@@ -1,11 +1,14 @@
-html {
+html ,
+body {
   font-size: 62.5%;
   scroll-behavior: smooth;
-}
-
-body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   text-align: center !important;
   cursor: default;
+}
+#gallery {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }

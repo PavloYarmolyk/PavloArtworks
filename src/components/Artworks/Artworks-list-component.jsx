@@ -53,25 +53,22 @@ const ArtworksListComponent = () => {
       const image = getImage(edge.node.frontmatter.featured);
       const linkToArtwork = edge.node.frontmatter.slug.replace('artworks/', '');
       return (
-        <>
-          <Col md={4}>
-            <div className="artworks-list-intro">
-              <Zoom duration={500} delay={10}>
-                <Link to={linkToArtwork}>
-                  <GatsbyImage
-                    className="artworks-list-image rounded shadow-lg"
-                    image={image}
-                    alt={edge.node.frontmatter.title}
-                  />
-                  <h4 className="artworks-list-title">{edge.node.frontmatter.title}</h4>
-                </Link>
-              </Zoom>
-              <div className="artworks-list-date">{edge.node.frontmatter.date}</div>
-              <p className="artworks-list-about">{edge.node.frontmatter.made_of_and_where}</p>
-            </div>
-            {/* <div className="artworks-list-content" dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
-          </Col>
-        </>
+        <Col key={linkToArtwork} md={4}>
+          <div className="artworks-list-intro">
+            <Zoom duration={500} delay={10}>
+              <Link to={linkToArtwork}>
+                <GatsbyImage
+                  className="artworks-list-image rounded shadow-lg"
+                  image={image}
+                  alt={edge.node.frontmatter.title}
+                />
+                <h4 className="artworks-list-title">{edge.node.frontmatter.title}</h4>
+              </Link>
+            </Zoom>
+            <div className="artworks-list-date">{edge.node.frontmatter.date}</div>
+            <p className="artworks-list-about">{edge.node.frontmatter.made_of_and_where}</p>
+          </div>
+        </Col>
       );
     });
 

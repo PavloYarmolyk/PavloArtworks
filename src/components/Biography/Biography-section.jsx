@@ -37,7 +37,7 @@ const Bio = () => {
     .map(edge => {
       const image = getImage(edge.node.frontmatter.bioImage);
       return (
-        <>
+        <div key={edge.node.frontmatter.title}>
           <div id="top" />
           <div className="bio-bg" />
           <div className="overlay" />
@@ -54,7 +54,7 @@ const Bio = () => {
             </div>
             <div className="bio-content" dangerouslySetInnerHTML={{ __html: edge.node.html }} />
           </div>
-        </>
+        </div>
       );
     });
   return <div>{BioComponent}</div>;

@@ -13,7 +13,7 @@ const Hero = () => (
       </Fade>
       <Fade bottom duration={200} distance="300px">
         <h2 className="hero-title">{heroData.title}</h2>
-        <h2 className="hero-title-name text-color-main">
+        <h2 className="hero-title-name">
           {heroData.afterTitle}
         </h2>
       </Fade>

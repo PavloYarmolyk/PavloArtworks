@@ -1,4 +1,4 @@
-process.noDeprecation = true // https://github.com/webpack/webpack/issues/6568
+process.noDeprecation = true; // https://github.com/webpack/webpack/issues/6568
 
 const config = require('./src/mock/head.json');
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
@@ -63,7 +63,24 @@ module.exports = {
         path: `${__dirname}/src/Artwork_paintings`,
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

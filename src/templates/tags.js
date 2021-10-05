@@ -15,7 +15,8 @@ const Tags = ({ pageContext, data }) => {
   let { tag } = pageContext;
   tag = tag.toUpperCase();
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagHeader = `${totalCount} Artwork${totalCount === 1 ? '' : 's'} found in ${tag}`;
+  const tagHeader = `${totalCount} Artwork${totalCount === 1 ? '' : 's'} found`;
+  const Header = `${tag}`
   return (
     <>
       <Seo />
@@ -23,14 +24,15 @@ const Tags = ({ pageContext, data }) => {
         <Container>
           <ArtworksFiltered>
             <div>
-              <h1 className="align-left">{tagHeader}</h1>
+              <h1 className="align-left">{Header}</h1>
+              <h4 className="align-left">{tagHeader}</h4>
               <Row>
                 {edges.map(({ node }) => {
                   const { featured, date, title, slug, made_of_and_where } = node.frontmatter;
                   const image = getImage(featured);
                   const linkTo = `/${slug}`;
                   return (
-                    <Col md={4}>
+                    <Col key={slug} md={4}>
                       <div className="artworks-list-intro">
                         <Zoom duration={500} delay={10}>
                           <Link to={linkTo}>
