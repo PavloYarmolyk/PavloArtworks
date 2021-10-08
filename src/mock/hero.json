@@ -1,7 +1,11 @@
 {
   "overTitle": "Online Gallery",
-  "title": "ARTWORKS",
-  "afterTitle": "by Pavlo Yarmolyk",
+  "alt": "art-gallery",
+  "backgroundImage_hero": "../images/hero-gallery-desktopn2.webp",
   "buttonOne": "Biography",
-  "buttonTwo": "Artworks"
+  "link_to_ButtonOne": "/biography",
+  "title": "ARTWORKS",
+  "buttonTwo": "Artworks",
+  "link_to_ButtonTwo": "/artworks",
+  "afterTitle": "by Pavlo Yarmolyk"
 }
