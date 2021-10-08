@@ -20,19 +20,9 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
   console.log(imagesArray);
   return (
     <div>
-      <div id="top"/>
-      <Container className="individualSection-container">
+      <div id="top" />
+      <Container className="individualSection_container">
         <Row>
-          <Col lg={6} className="individualSection-description-wrapper mobile">
-            <HeadShake>
-              <h1 className="individualSection-header">{frontmatter.title}</h1>
-            </HeadShake>
-            <hr className="styled-hr" />
-            <span>{frontmatter.date}</span>
-            <h5>{frontmatter.made_of_and_where}</h5>
-            <hr className="styled-hr" />
-            <div className="main-short-description">{frontmatter.mainShortDescription}</div>
-          </Col>
           <Col className="individualSection-carousel-wrapper">
             {image && (
               <Zoom duration={500} delay={10}>
@@ -46,18 +36,19 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
               </Zoom>
             )}
           </Col>
-          <Col lg={6} className="individualSection-description-wrapper desktop">
+          <Col lg={6} className="individualSection_description-wrapper desktop">
             <HeadShake>
-              <h1 className="individualSection-header">{frontmatter.title}</h1>
+              <h1 className="individualSection_header">{frontmatter.title}</h1>
             </HeadShake>
-            <hr className="styled-hr" />
-            <span>{frontmatter.date}</span>
+            <br />
+            <span className="individualSection_date align-left">{frontmatter.date}</span>
             <h5>{frontmatter.made_of_and_where}</h5>
-            <hr className="styled-hr" />
-            <div className="main-short-description">{frontmatter.mainShortDescription}</div>
+            <br />
+            <div className="individualSection_main-short-description">
+              {frontmatter.mainShortDescription}
+            </div>
           </Col>
         </Row>
-        <hr />
         <Row>
           <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
         </Row>

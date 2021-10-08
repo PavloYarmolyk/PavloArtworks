@@ -2,7 +2,7 @@
   background-color:black;
   color: $white-color;
   padding: 2rem 0;
-  z-index: 5;
+  z-index: -1 !important;
 
   #dev-by {
     font-size: 1.3rem;
