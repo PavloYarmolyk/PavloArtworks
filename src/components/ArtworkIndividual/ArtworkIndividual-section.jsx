@@ -6,7 +6,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { graphql, useStaticQuery } from 'gatsby';
 
 const IndividualSection = ({ image, frontmatter, html, name }) => {
   const rawSlderImages = frontmatter.sliderImage;
@@ -15,41 +14,58 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
   const imagesArray = rawSlderImages
     ? rawSlderImages.map(image => image.image.childImageSharp.gatsbyImageData.images.fallback.src)
     : [];
-const images = imagesArray.map(imageSl => ({
-  src: `${imageSl}`,
-}));
+  const images = imagesArray.map(imageSl => ({
+    src: `${imageSl}`,
+  }));
   console.log(imagesArray);
   return (
     <div>
-      <div id="top"></div>
-      {/* <Zoom duration={500} delay={10}> */}
-      {/* </Zoom> */}
+      <div id="top"/>
       <Container className="individualSection-container">
         <Row>
-          <Col lg={6} className="individualSection-description-wrapper">
+          <Col lg={6} className="individualSection-description-wrapper mobile">
             <HeadShake>
               <h1 className="individualSection-header">{frontmatter.title}</h1>
             </HeadShake>
-            {frontmatter.additionalDescription && <div>{frontmatter.additionalDescription}</div>}
+            <hr className="styled-hr" />
+            <span>{frontmatter.date}</span>
+            <h5>{frontmatter.made_of_and_where}</h5>
+            <hr className="styled-hr" />
+            <div className="main-short-description">{frontmatter.mainShortDescription}</div>
           </Col>
-          <Col lg={6} className="individualSection-image-wrapper">
+          <Col className="individualSection-carousel-wrapper">
             {image && (
-              <Carousel images={images} style={{ maxWidth: '100%', height: 500, width: 800 }} />
+              <Zoom duration={500} delay={10}>
+                <Carousel
+                  isAutoPlaying
+                  shouldMaximizeOnClick
+                  hasIndexBoard="buttomCenter"
+                  images={images}
+                  className="carousel"
+                />
+              </Zoom>
             )}
-            <div className="individualSection-image-thumb-wrapper">
-              {/* <Carousel images={images} style={{ height: 500, width: 800 }} /> */}
-              {/* {imagesArray &&
-                imagesArray.map(imageSl => (
-                  <img className="individualSection-image-thumb" src={imageSl} alt={imageSl} />
-                ))} */}
-            </div>
+          </Col>
+          <Col lg={6} className="individualSection-description-wrapper desktop">
+            <HeadShake>
+              <h1 className="individualSection-header">{frontmatter.title}</h1>
+            </HeadShake>
+            <hr className="styled-hr" />
+            <span>{frontmatter.date}</span>
+            <h5>{frontmatter.made_of_and_where}</h5>
+            <hr className="styled-hr" />
+            <div className="main-short-description">{frontmatter.mainShortDescription}</div>
           </Col>
         </Row>
+        <hr />
+        <Row>
+          <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
+        </Row>
       </Container>
-
-      <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
 };
 
 export default IndividualSection;
+
+// https://www.npmjs.com/package/react-gallery-carousel

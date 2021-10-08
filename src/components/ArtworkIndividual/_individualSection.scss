@@ -1,33 +1,22 @@
 .individualSection-container {
   margin: 100px auto 10px;
+  .carousel {
+    margin: 0 auto;
+    max-height: 80vh;
+    max-width: 80vh;
+    width: 100%;
+    // border-radius: 15px;
+    // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    //   rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    //   rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    :nth-child(2) ul {
+      justify-content: center;
+    }
+    & svg {
+      width: 10px;
+    }
+  }
   .individualSection-header {
     padding: 0;
-  }
-  .individualSection-image-wrapper {
-    // width: 100%;
-    overflow: hidden;
-    // border: 1px solid #000;
-    .individualSection-image {
-      min-width: 320px;
-      padding: 5px;
-      margin: 5px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
-      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-      rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-    .individualSection-image-thumb-wrapper{
-      // display: flex;
-      // flex-direction: row;
-
-      .individualSection-image-thumb {
-        width: 100%;
-        max-width: 100px;
-        padding: 5px;
-        margin: 5px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-      }
-    }
   }
 }

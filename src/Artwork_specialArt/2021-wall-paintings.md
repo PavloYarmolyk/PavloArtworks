@@ -19,6 +19,6 @@ sliderImage:
   - image: ../images/004_wall-painting_009.jpg
   - image: ../images/004_wall-painting_010.jpg
   - image: ../images/004_wall-painting_011.jpg
-additionalDescription: ADDITIONAL DESCRIPTION Wall Paintings
+mainShortDescription: Main Short Description Wall Paintings
 ---
 Wall Paintings

@@ -14,4 +14,5 @@ sliderImage:
   - image: ../images/005_003_Abstract-Compositions_004.jpg
   - image: ../images/005_003_Abstract-Compositions_005.jpg
   - image: ../images/005_003_Abstract-Compositions_006.jpg
+mainShortDescription: Main Short Description Abstract-composition.
 ---

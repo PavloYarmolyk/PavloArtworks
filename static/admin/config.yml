@@ -46,8 +46,8 @@ collections:
         widget: list
         fields:
           - { label: Image, name: image, widget: image }
-      - { label: 'Description', name: 'body', widget: 'markdown', required: false }
-      - { label: 'Additional Description', name: 'additionalDescription', required: false }
+      - { label: 'Full Description', name: 'body', widget: 'markdown', required: false }
+      - { label: 'Main Description', name: 'mainShortDescription' }
   - name: painting
     label: Painting
     folder: src/Artwork_paintings
@@ -87,6 +87,8 @@ collections:
           - { label: Link_to_ButtonOne, name: link_to_ButtonOne, widget: string }
           - { label: ButtonTwo, name: buttonTwo, widget: string }
           - { label: Link_to_ButtonTwo, name: link_to_ButtonTwo, widget: string }
+          - { label: Background Image, name: backgroundImage_hero, widget: image }
+          - { label: Background Image, name: alt, widget: string }
       - label: 'Footer Info'
         name: 'footer'
         file: 'src/mock/footer.json'

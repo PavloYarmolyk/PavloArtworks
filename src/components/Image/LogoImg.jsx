@@ -11,12 +11,7 @@ const AboutImg = ({ filename, alt }) => {
           edges {
             node {
               childImageSharp {
-                gatsbyImageData(
-                  placeholder: NONE
-                  formats: WEBP
-                  layout: CONSTRAINED
-                  height: 50
-                )
+                gatsbyImageData(placeholder: NONE, formats: WEBP, layout: CONSTRAINED, height: 50)
               }
               relativePath
             }
@@ -26,8 +21,8 @@ const AboutImg = ({ filename, alt }) => {
     `
   );
   const edges = pageQuery.allFile.edges;
-  
-  const image = edges.find((n) => n.node.relativePath.includes(filename));
+
+  const image = edges.find(n => n.node.relativePath.includes(filename));
 
   if (!image) return null;
 

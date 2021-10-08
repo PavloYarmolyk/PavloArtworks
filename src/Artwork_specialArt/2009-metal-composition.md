@@ -10,7 +10,7 @@ made_of_and_where: metal, bicycles, welding, 200х300
 Full description: Full description
 featured: ../images/001_metal-compos_003.webp
 tags:
-  - metal-composition
+  - metal compositions
 sliderImage:
   - image: ../images/001_metal-compos_001.webp
   - image: ../images/001_metal-compos_002.webp
@@ -23,6 +23,7 @@ sliderImage:
   - image: ../images/001_metal-compos_010.webp
   - image: ../images/001_metal-compos_011.webp
   - image: ../images/001_metal-compos_012.webp
+mainShortDescription: Main Short Description The composition of metal parts of old bicycles and other metal parts is transformed into the shape of a creature.
 ---
 The composition of metal parts of old bicycles and other metal parts is transformed into the shape of a creature.
 

@@ -41,7 +41,7 @@ export const pageQuery = graphql`
           }
         }
         date(formatString: "MMMM DD, YYYY")
-        additionalDescription
+        mainShortDescription
         made_of_and_where
         slug
         tags

@@ -22,6 +22,8 @@ sliderImage:
   - image: ../images/002_mosaic_012.jpg
   - image: ../images/002_mosaic_013.jpg
   - image: ../images/002_mosaic_014.jpg
+mainShortDescription: Main Short Description Mosaic compositions have been created for several years.
+
 ---
 Mosaic compositions have been created for several years.
 

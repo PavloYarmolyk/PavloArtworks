@@ -13,6 +13,7 @@ sliderImage:
   - image: ../images/003_Sacral-Art_004.jpg
   - image: ../images/003_Sacral-Art_005.jpg
   - image: ../images/003_Sacral-Art_006.jpg
+mainShortDescription: Main Short Description Wall Paintings
 ---
 
 2009-2013, participation in the paintings of the temple.

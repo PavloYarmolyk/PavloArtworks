@@ -9,5 +9,6 @@ tags:
   - paintings
 sliderImage:
   - image: ../images/005_001_Adam-and-Eve_001.jpg
+mainShortDescription: The picture shows people and parts of a computer. These are symbols of a combination of electronic and organic worlds.
 ---
 The picture shows people and parts of a computer. These are symbols of a combination of electronic and organic worlds.
