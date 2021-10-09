@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 import ArtworksFilterComponent from './Artworks-filter-component';
 
 const Artworkslist = ({ children }) => {
-  const [filterFisibility, setFilterVisibility] = useState('closed artworks-filter-wrapper');
+  const [filterFisibility, setFilterVisibility] = useState('opened artworks-filter-wrapper');
   const [filtersArrow, setFiltersArrow] = useState('fa fa-angle-up fa cta-btn--hero');
 
   const filtersVisibility = () => {

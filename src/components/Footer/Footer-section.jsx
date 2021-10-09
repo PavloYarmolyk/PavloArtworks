@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import footerData from '../../mock/footer.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -81,7 +81,7 @@ const Footer = ({ linkTo }) => {
       <Row>
         <div className="footer-contacts-wrapper">
           <a href={linkToPhoneNumber} className="col-xs-3" rel="noopener noreferrer">
-            <span className="fa fa-2x fa-mobile-phone"></span>
+            <span className="fa fa-4x fa-mobile-phone"></span>
           </a>
           <a
             href={linkToWhatsapp}
@@ -89,16 +89,16 @@ const Footer = ({ linkTo }) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className="fa fa-2x fa-whatsapp"></span>
+            <span className="fa fa-4x fa-whatsapp"></span>
           </a>
           <a href={fbLink} className="col-xs-3" rel="noopener noreferrer" target="_blank">
-            <span className="fa fa-2x fa-facebook"></span>
+            <span className="fa fa-4x fa-facebook"></span>
           </a>
           <a href={instaLink} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-instagram fa-4x" aria-hidden="true"></i>
           </a>
           <a href={linkToMail} rel="noopener noreferrer" target="_blank">
-            <span className="fa fa-2x fa-at"></span>
+            <span className="fa fa-4x fa-at"></span>
           </a>
         </div>
       </Row>

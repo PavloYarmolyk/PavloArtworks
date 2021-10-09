@@ -29,14 +29,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  z-index: 5;
+  z-index: 0;
 
   .cta-btn--filter {
     display: inline-block;
     position: relative;
     padding: 0.5rem $default-font-size;
     font-weight: 500;
-    z-index: 1;
+    z-index: 0;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
     font-size: 1.2rem;
     color: $grey;

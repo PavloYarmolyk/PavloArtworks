@@ -1,7 +1,7 @@
 .individualSection_container {
-  margin: 100px auto 10px;
+  margin: 10rem auto 10px;
   min-height: 90vh;
-
+  z-index: 15;
   .carousel {
     margin: 0 auto;
     max-height: 80vh;
@@ -23,14 +23,23 @@
       padding: 0;
     }
     .individualSection_date {
-      font-size: 1.5rem;
+      color: $grey;
+      font-size: 1.2rem;
+    }
+    .individualSection_made-of {
+      color: $grey;
     }
     .individualSection_main-short-description {
-      font-size: 1.5rem;
+      font-family: $font-amiri;
+      text-align: justify;
+      font-size: 2rem;
       padding: 5px;
+      margin: 10px;
     }
   }
   .individualSection-carousel-wrapper {
+    font-size: 1.5rem;
+    margin: 20px 0;
     // overflow: hidden;
   }
 }

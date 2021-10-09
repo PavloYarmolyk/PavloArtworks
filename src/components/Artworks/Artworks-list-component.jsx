@@ -36,7 +36,6 @@ const ArtworksListComponent = () => {
                     }
                   }
                 }
-                Full_description
                 made_of_and_where
               }
               excerpt(pruneLength: 100)

@@ -7,7 +7,7 @@ import ArtworksFilterComponent from './Artworks-filter-component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Artworkslist = () => {
-  const [filterFisibility, setFilterVisibility] = useState('closed artworks-filter-wrapper');
+  const [filterFisibility, setFilterVisibility] = useState('opened artworks-filter-wrapper');
   const [filtersArrow, setFiltersArrow] = useState('fa fa-angle-up fa cta-btn--hero');
 
   const filtersVisibility = () => {
