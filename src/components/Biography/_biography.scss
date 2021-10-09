@@ -10,12 +10,8 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: center / cover no-repeat url('../images/hero-gallery-desktopN2.webp');
+  background: center / cover no-repeat url('../images/hero-gallery-desktopn2.webp');
   background-attachment: fixed;
-  @include respond(phone) {
-    background-attachment: fixed;
-    background: center / cover no-repeat url('../images/hero-gallery-desktopN2.webp');
-  }
 }
 .bio-message-wrapper {
   display: flex;
