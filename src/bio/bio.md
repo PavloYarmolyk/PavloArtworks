@@ -33,6 +33,8 @@ I had several personal exhibitions, and participated in collective projects in U
 
 <span class='image-description'>"Francis of Assisi" I wanted to show my interest in the subject of human struggle for self-discovery and deepening in comprehending self being as part of God.</span>
 
+![metal-compos](../images/001_metal-compos_003.webp "'Francis of Assisi'")
+
 <span class='image-description'>In the voluminous-spatial 3D compositions "Wheel"and "Wheel fragment" created from the bicycle parts, I tried to show the human desire for perfection through the shape and the circle sign, as an ancient symbol of constant motion and change that is used in many cultures of the world.</span>
 
 <p class='main-bio'>I can say that the main idea of my inspiration and art works is the constant contemplation of the nature and its creations and pass these observations through my being.</p>

@@ -56,10 +56,6 @@ const IndividualSection = ({ image, frontmatter, html, id }) => {
       ? neighbourArtworks.previous.frontmatter.title
       : 'Go to AllArtworks';
 
-  const currentArtworkPath = window.location.pathname;
-  console.log(previousArtwork);
-  console.log(currentArtworkPath);
-
   const rawSlderImages = frontmatter.sliderImage;
 
   const imagesArray = rawSlderImages
@@ -108,7 +104,7 @@ const IndividualSection = ({ image, frontmatter, html, id }) => {
                   hasSizeButton="topRight"
                   hasDotButtonsAtMax="bottom"
                   objectFit="contain"
-                  // shouldMaximizeOnClick
+                  // shouldMinimizeOnClick
                   // thumbnailHeight="80px"
                 />
               </Zoom>
