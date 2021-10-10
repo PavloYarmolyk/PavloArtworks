@@ -94,9 +94,9 @@ const IndividualSection = ({ image, frontmatter, html, id }) => {
                   hasThumbnails={false}
                   shouldSwipeOnMouse
                   hasIndexBoard={false}
-                  // hasSizeButtonAtMax={false}
-                  // hasMediaButtonAtMax={false}
                   hasIndexBoardAtMax={false}
+                  hasRightButtonAtMax={false}
+                  hasLeftButtonAtMax={false}
                   hasThumbnailsAtMax={false}
                   hasMediaButtonAtMax="topLeft"
                   hasSizeButtonAtMax="topRight"
@@ -104,8 +104,6 @@ const IndividualSection = ({ image, frontmatter, html, id }) => {
                   hasSizeButton="topRight"
                   hasDotButtonsAtMax="bottom"
                   objectFit="contain"
-                  // shouldMinimizeOnClick
-                  // thumbnailHeight="80px"
                 />
               </Zoom>
             )}

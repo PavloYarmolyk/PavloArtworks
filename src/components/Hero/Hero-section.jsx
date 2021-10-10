@@ -17,11 +17,7 @@ const Hero = () => {
               relativePath
               name
               childImageSharp {
-                gatsbyImageData(
-                  placeholder: DOMINANT_COLOR
-                  formats: WEBP
-                  layout: CONSTRAINED
-                )
+                gatsbyImageData(placeholder: DOMINANT_COLOR, formats: WEBP, layout: CONSTRAINED)
               }
             }
           }
@@ -38,7 +34,7 @@ const Hero = () => {
   if (!image) return ' ';
 
   const imageToGo = getImage(image.node);
-  console.log(imageToGo);
+  console.log(image);
   return (
     <div id="home" className="hero-wrapper">
       <GatsbyImage

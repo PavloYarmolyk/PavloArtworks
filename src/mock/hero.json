@@ -1,7 +1,7 @@
 {
   "overTitle": "Online Gallery",
-  "alt": "art-gallery",
-  "backgroundImage_hero": "../images/hero-gallery-desktopn2.webp",
+  "backgroundImage_hero": "../images/hero-gallery-desktop.webp",
+  "backgroundImage_heroMobile": "../images/hero-gallery-mobile.webp",
   "buttonOne": "Biography",
   "link_to_ButtonOne": "/biography",
   "title": "ARTWORKS",
