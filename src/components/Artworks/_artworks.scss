@@ -11,13 +11,7 @@
   bottom: 0;
   z-index: -1;
   background-attachment: fixed;
-  background: center / 5% repeat
-    url('../images/a-web-of-bright-red-dots-connected-by-lines-against-a-black-background.jpg');
-  @include respond(phone) {
-    background-attachment: fixed;
-    background: center / 10% repeat
-      url('../images/a-web-of-bright-red-dots-connected-by-lines-against-a-black-background.jpg');
-  }
+  background: url('../images/hero-gallery-desktopn2.webp') no-repeat fixed center;
 }
 .filter-header {
   margin: 100px auto 10px;
@@ -122,8 +116,20 @@
     margin: 1rem;
     padding: 2rem 1rem;
   }
-  .artworks-list-image {
-    margin: 2rem;
+  .artwork-image-wrapper {
+    // background-color: darken($color: $white-color, $amount: 20%);
+    background-image: linear-gradient(
+      135deg,
+      $alfa-secondary-color 0%,
+      $primary-color 38%,
+      $primary-color 58%,
+      $alfa-secondary-color 100%
+    );
+    width: fit-content;
+    margin: 10px auto;
+    .artworks-list-image {
+      margin: 0.5rem;
+    }
   }
   .artworks-list-title {
     font-family: $font-limelight;
@@ -161,18 +167,8 @@
     }
   }
 }
-.overlay-artworks {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  opacity: 0.3;
-  z-index: -1;
-}
+
+// Special Styling
 .filter-container {
   position: relative;
   .closed {

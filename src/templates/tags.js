@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Zoom } from 'react-reveal';
+import Tilt from 'react-tilt';
 import { Container, Col, Row } from 'react-bootstrap';
 import Seo from '../components/Shared/Seo';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
@@ -20,7 +21,7 @@ const Tags = ({ pageContext, data }) => {
   return (
     <>
       <Seo />
-      <PageWrapper footerLinkTo="#name">
+      <PageWrapper footerLinkTo="#top">
         <Container>
           <ArtworksFiltered>
             <div>
@@ -33,14 +34,30 @@ const Tags = ({ pageContext, data }) => {
                   const linkTo = `/${slug}`;
                   return (
                     <Col key={slug} md={4}>
-                      <div className="artworks-list-intro">
+                      <div className="artworks-list-intro ">
                         <Zoom duration={500} delay={10}>
                           <Link to={linkTo}>
-                            <GatsbyImage
-                              className="artworks-list-image rounded shadow-lg"
-                              image={image}
-                              alt={title}
-                            />
+                            <Tilt
+                              options={{
+                                reverse: false,
+                                max: 8,
+                                perspective: 1000,
+                                scale: 1,
+                                speed: 300,
+                                transition: true,
+                                axis: null,
+                                reset: true,
+                                easing: 'cubic-bezier(.03,.98,.52,.99)',
+                              }}
+                            >
+                              <div className="artwork-image-wrapper rounded shadow-lg">
+                                <GatsbyImage
+                                  className="artworks-list-image rounded shadow-lg"
+                                  image={image}
+                                  alt={title}
+                                />
+                              </div>
+                            </Tilt>
                             <h4 className="artworks-list-title">{title}</h4>
                           </Link>
                         </Zoom>

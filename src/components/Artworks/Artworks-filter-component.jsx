@@ -1,7 +1,4 @@
 import React from 'react';
-import { Zoom } from 'react-reveal';
-import { Container, Col, Row } from 'react-bootstrap';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby';
 // Utilities
@@ -29,9 +26,9 @@ const ArtworksFilterComponent = () => {
 
   const {
     allMarkdownRemark: { group },
-    site: {
-      siteMetadata: { title },
-    },
+    // site: {
+    //   siteMetadata: { title },
+    // },
   } = data;
 
   const ArtworkFilterComponent = group.map(tag => {

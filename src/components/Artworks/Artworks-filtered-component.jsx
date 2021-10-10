@@ -22,7 +22,6 @@ const Artworkslist = ({ children }) => {
     <>
       <div id="top" />
       <div className="artworks-list-bg" />
-      <div className="overlay-artworks" />
       <div className="filter-container">
         <h1 className="align-left white filter-header">
           Artworks by Section{' '}

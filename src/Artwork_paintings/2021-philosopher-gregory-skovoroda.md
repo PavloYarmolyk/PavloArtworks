@@ -1,7 +1,7 @@
 ---
 layout: artwork
 slug: artworks/philosopher-gregory-skovoroda
-title: Linear Heads
+title: Grigory Skovoroda
 date: 2019-01-01T22:24:49.739Z
 featured: ../images/005_008_Philosopher-Gregory-Skovoroda_002.jpg
 made_of_and_where: '"Grigory Skovoroda" 2016 Board, levkas, tempera, acrylic, fabric. 175x135.'

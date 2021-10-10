@@ -5,11 +5,6 @@
   color: $white-color;
   overflow: hidden;
   z-index: 0;
-  // background: center / cover no-repeat url('../images/hero-gallery-desktopN2.webp');
-
-  @include respond(phone) {
-    // background: center / cover no-repeat url('../images/hero-gallery-mobile.webp');
-  }
   .hero-message-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -159,6 +154,7 @@
         height: 100%;
         left: 0;
         bottom: 0;
+        z-index: -1;
         transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
         // Responsive Button hero style
         @include respond(phone) {
@@ -170,6 +166,7 @@
         -webkit-text-fill-color: $white-color;
         text-decoration: none;
         border: 2px solid transparent;
+        z-index: 1;
         // Responsive Button hover hero style
         @include respond(tab-port) {
           -webkit-text-fill-color: $alfa-secondary-color;

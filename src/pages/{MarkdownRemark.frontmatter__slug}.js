@@ -2,22 +2,26 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Seo from '../components/Shared/Seo';
 import PageWrapper from '../components/Shared/pageWrapper';
-import Artworks from '../components/Artworks/Artworks-section';
 import '../style/main.scss';
 import { getImage } from 'gatsby-plugin-image';
-import ArtworkIndividual from '../components/ArtworkIndividual/ArtworkIndividual-section'
-
+import ArtworkIndividual from '../components/ArtworkIndividual/ArtworkIndividual-section';
 
 export default function BlogTemplate({ data }) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { frontmatter, html, id } = markdownRemark;
   const image = getImage(frontmatter.featured);
   const name = frontmatter.featured ? frontmatter.featured.name : '';
   return (
     <>
       <Seo />
       <PageWrapper footerLinkTo="#top">
-        <ArtworkIndividual frontmatter={frontmatter} html={html} image={image} name={name} />
+        <ArtworkIndividual
+          frontmatter={frontmatter}
+          html={html}
+          image={image}
+          name={name}
+          id={id}
+        />
       </PageWrapper>
     </>
   );
@@ -47,7 +51,19 @@ export const pageQuery = graphql`
         tags
         title
       }
+      id
       html
     }
   }
 `;
+
+// next {
+//   frontmatter {
+//     slug
+//   }
+// }
+// previous {
+//   frontmatter {
+//     slug
+//   }
+// }

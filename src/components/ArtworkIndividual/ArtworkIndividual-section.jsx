@@ -3,11 +3,64 @@ import { Zoom } from 'react-reveal';
 import HeadShake from 'react-reveal/HeadShake';
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-gallery-carousel';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import 'react-gallery-carousel/dist/index.css';
 
-const IndividualSection = ({ image, frontmatter, html, name }) => {
+const IndividualSection = ({ image, frontmatter, html, id }) => {
+  const pageQuery = useStaticQuery(
+    graphql`
+      {
+        allMarkdownRemark {
+          edges {
+            node {
+              id
+            }
+            next {
+              frontmatter {
+                slug
+                title
+              }
+              id
+            }
+            previous {
+              frontmatter {
+                slug
+                title
+              }
+              id
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const edges = pageQuery.allMarkdownRemark.edges;
+  const neighbourArtworks = edges.find(n => n.node.id.includes(id));
+
+  const nextArtwork = neighbourArtworks.next
+    ? `/${neighbourArtworks.next.frontmatter.slug}`
+    : '/artworks';
+
+  const nextArtworkTitle = neighbourArtworks.next
+    ? neighbourArtworks.next.frontmatter.title
+    : 'Go to AllArtworks';
+
+  const previousArtwork = `/${neighbourArtworks.previous}`
+    ? `/${neighbourArtworks.previous.frontmatter.slug}`
+    : '/artworks';
+
+  const previousArtworkTitle =
+    neighbourArtworks.previous.frontmatter.slug !== '/biography/bio'
+      ? neighbourArtworks.previous.frontmatter.title
+      : 'Go to AllArtworks';
+
+  const currentArtworkPath = window.location.pathname;
+  console.log(previousArtwork);
+  console.log(currentArtworkPath);
+
   const rawSlderImages = frontmatter.sliderImage;
-  console.log(rawSlderImages);
 
   const imagesArray = rawSlderImages
     ? rawSlderImages.map(image => image.image.childImageSharp.gatsbyImageData.images.fallback.src)
@@ -15,9 +68,9 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
   const images = imagesArray.map(imageSl => ({
     src: `${imageSl}`,
   }));
-  console.log(imagesArray);
+
   return (
-    <div>
+    <div className="individualSection_wrapper">
       <div id="top" />
       <Container className="individualSection_container">
         <Row>
@@ -26,32 +79,36 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
               <h1 className="individualSection_header">{frontmatter.title}</h1>
             </HeadShake>
             <br />
-            <span className="individualSection_date align-left">{frontmatter.date}</span>
+            <span className="individualSection_date">{frontmatter.date}</span>
             <h5 className="individualSection_made-of">{frontmatter.made_of_and_where}</h5>
             <br />
             <div className="individualSection_main-short-description">
               {frontmatter.mainShortDescription}
             </div>
           </Col>
-          <Col className="individualSection-carousel-wrapper">
+          <Col className="individualSection-carousel-wrapper ">
             {image && (
               <Zoom duration={500} delay={10}>
                 <Carousel
-                  isAutoPlaying
+                  canAutoPlay
                   zIndexAtMax={10}
                   images={images}
-                  canAutoPlay
                   className="carousel"
-                  hasDotButtonsAtMax="bottom"
                   hasDotButtons="bottom"
-                  hasThumbnailsAtMax={false}
                   hasThumbnails={false}
-                  hasIndexBoardAtMax={false}
+                  shouldSwipeOnMouse
                   hasIndexBoard={false}
-                  hasSizeButtonAtMax={false}
-                  hasMediaButtonAtMax={false}
-                  // objectFit="cover"
-                  shouldMinimizeOnClick
+                  // hasSizeButtonAtMax={false}
+                  // hasMediaButtonAtMax={false}
+                  hasIndexBoardAtMax={false}
+                  hasThumbnailsAtMax={false}
+                  hasMediaButtonAtMax="topLeft"
+                  hasSizeButtonAtMax="topRight"
+                  hasMediaButton="topLeft"
+                  hasSizeButton="topRight"
+                  hasDotButtonsAtMax="bottom"
+                  objectFit="contain"
+                  // shouldMaximizeOnClick
                   // thumbnailHeight="80px"
                 />
               </Zoom>
@@ -62,7 +119,7 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
               <h1 className="individualSection_header">{frontmatter.title}</h1>
             </HeadShake>
             <br />
-            <span className="individualSection_date align-left">{frontmatter.date}</span>
+            <span className="individualSection_date">{frontmatter.date}</span>
             <h5 className="individualSection_made-of">{frontmatter.made_of_and_where}</h5>
             <br />
             <div className="individualSection_main-short-description">
@@ -72,6 +129,18 @@ const IndividualSection = ({ image, frontmatter, html, name }) => {
         </Row>
         <Row>
           <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
+          <div className="artworks-navigation">
+            {neighbourArtworks.previous.frontmatter.slug !== '/biography/bio' && (
+              <Link to={previousArtwork} replace>
+                Previous Artwork : "{previousArtworkTitle}"
+              </Link>
+            )}
+            {neighbourArtworks.next && (
+              <Link to={nextArtwork} replace>
+                Next Artwork : "{nextArtworkTitle}"
+              </Link>
+            )}
+          </div>
         </Row>
       </Container>
     </div>

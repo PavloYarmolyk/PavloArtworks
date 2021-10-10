@@ -1,6 +1,7 @@
 import React from 'react';
 import { Zoom } from 'react-reveal';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import Tilt from 'react-tilt';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby';
@@ -56,11 +57,27 @@ const ArtworksListComponent = () => {
           <div className="artworks-list-intro">
             <Zoom duration={500} delay={10}>
               <Link to={linkToArtwork}>
-                <GatsbyImage
-                  className="artworks-list-image rounded shadow-lg"
-                  image={image}
-                  alt={edge.node.frontmatter.title}
-                />
+                <Tilt
+                  options={{
+                    reverse: false,
+                    max: 8,
+                    perspective: 1000,
+                    scale: 1,
+                    speed: 300,
+                    transition: true,
+                    axis: null,
+                    reset: true,
+                    easing: 'cubic-bezier(.03,.98,.52,.99)',
+                  }}
+                >
+                  <div className="artwork-image-wrapper rounded shadow-lg">
+                    <GatsbyImage
+                      className="artworks-list-image rounded shadow-lg"
+                      image={image}
+                      alt={edge.node.frontmatter.title}
+                    />
+                  </div>
+                </Tilt>
                 <h4 className="artworks-list-title">{edge.node.frontmatter.title}</h4>
               </Link>
             </Zoom>

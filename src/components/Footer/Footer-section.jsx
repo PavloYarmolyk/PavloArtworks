@@ -17,7 +17,7 @@ const Footer = ({ linkTo }) => {
         <Col className="footer-flex" md={6}>
           <div>
             <p className="footer__text">
-              Our contacts:
+              Contact me:
               <br />
               <a rel="noopener noreferrer" href={linkToMail} target="_blank">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
@@ -46,6 +46,7 @@ const Footer = ({ linkTo }) => {
           <div>
             <p className="footer__text">
               Follow me:
+              <br />
               <br />
               <span id="share-buttons">
                 <a href={fbLink} target="_blank" rel="noopener noreferrer">
