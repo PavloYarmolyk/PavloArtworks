@@ -126,16 +126,18 @@ const IndividualSection = ({ image, frontmatter, html, id }) => {
         <Row>
           <div className="bio-content" dangerouslySetInnerHTML={{ __html: html }} />
           <div className="artworks-navigation">
-            {neighbourArtworks.previous.frontmatter.slug !== '/biography/bio' && (
-              <Link to={previousArtwork} replace>
-                Previous Artwork : "{previousArtworkTitle}"
-              </Link>
-            )}
-            {neighbourArtworks.next && (
-              <Link to={nextArtwork} replace>
-                Next Artwork : "{nextArtworkTitle}"
-              </Link>
-            )}
+            {neighbourArtworks.previous &&
+              neighbourArtworks.previous.frontmatter.slug !== '/biography/bio' && (
+                <Link to={previousArtwork} replace>
+                  Previous Artwork : "{previousArtworkTitle}"
+                </Link>
+              )}
+            {neighbourArtworks.next &&
+              neighbourArtworks.next.frontmatter.slug !== '/biography/bio' && (
+                <Link to={nextArtwork} replace>
+                  Next Artwork : "{nextArtworkTitle}"
+                </Link>
+              )}
           </div>
         </Row>
       </Container>
