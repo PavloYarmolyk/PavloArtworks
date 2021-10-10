@@ -47,12 +47,12 @@ const IndividualSection = ({ image, frontmatter, html, id }) => {
     ? neighbourArtworks.next.frontmatter.title
     : 'Go to AllArtworks';
 
-  const previousArtwork = `/${neighbourArtworks.previous}`
+  const previousArtwork = neighbourArtworks.previous
     ? `/${neighbourArtworks.previous.frontmatter.slug}`
     : '/artworks';
 
   const previousArtworkTitle =
-    neighbourArtworks.previous.frontmatter.slug !== '/biography/bio'
+    neighbourArtworks.previous && neighbourArtworks.previous.frontmatter.slug !== '/biography/bio'
       ? neighbourArtworks.previous.frontmatter.title
       : 'Go to AllArtworks';
 
