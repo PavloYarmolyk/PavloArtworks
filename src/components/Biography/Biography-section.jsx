@@ -66,24 +66,26 @@ const Bio = () => {
     .map(edge => {
       const image = getImage(edge.node.frontmatter.bioImage);
       return (
-        <div key={edge.node.frontmatter.title}>
+        <div
+          style={{
+            display: 'grid',
+          }}
+          key={edge.node.frontmatter.title}
+        >
           <div id="top" />
           <GatsbyImage
-            style={{
-              gridArea: '1/1',
-            }}
             className="artworks-list-bg desktop"
             alt=""
             image={imageForDesktop}
           />
-          <GatsbyImage
+          {/* <GatsbyImage
             style={{
               gridArea: '1/1',
             }}
             className="artworks-list-bg mobile"
             alt=""
             image={imageForMobile}
-          />
+          /> */}
           <div
             style={{
               gridArea: '1/1',

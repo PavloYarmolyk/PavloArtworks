@@ -55,44 +55,52 @@ const Artworkslist = ({ children }) => {
   const imageForDesktop = getImage(imageDesktop.node);
   const imageForMobile = getImage(imageMobile.node);
   return (
-    <>
+    <div
+      style={{
+        display: 'grid',
+      }}
+    >
       <div id="top" />
-      <GatsbyImage
-        style={{
-          gridArea: '1/1',
-        }}
-        className="artworks-list-bg desktop"
-        alt=""
-        image={imageForDesktop}
-      />
-      <GatsbyImage
+      <GatsbyImage className="artworks-list-bg desktop" alt="" image={imageForDesktop} />
+      {/* <GatsbyImage
         style={{
           gridArea: '1/1',
         }}
         className="artworks-list-bg mobile"
         alt=""
         image={imageForMobile}
-      />
-      <div className="filter-container">
-        <h1 className="align-left white filter-header">
-          Artworks by Section{' '}
-          <i className={filtersArrow} onClick={filtersVisibility} aria-hidden="true" />
-        </h1>
-        <div className={filterFisibility}>
-          <Link
-            to={'/artworks'}
-            activeStyle={{ color: 'white' }}
-            partiallyActive={true}
-            className="cta-btn--filter"
-          >
-            All Artworks
-          </Link>
-          <ArtworksFilterComponent />
+      /> */}
+      <div
+        style={{
+          gridArea: '1/1',
+          position: 'relative',
+          placeItems: 'center',
+          display: 'grid',
+        }}
+      >
+        <div>
+          <div className="filter-container">
+            <h1 className="align-left white filter-header">
+              Artworks by Section{' '}
+              <i className={filtersArrow} onClick={filtersVisibility} aria-hidden="true" />
+            </h1>
+            <div className={filterFisibility}>
+              <Link
+                to={'/artworks'}
+                activeStyle={{ color: 'white' }}
+                partiallyActive={true}
+                className="cta-btn--filter"
+              >
+                All Artworks
+              </Link>
+              <ArtworksFilterComponent />
+            </div>
+          </div>
+
+          <Row className="artworks-list-message-wrapper">{children}</Row>
         </div>
       </div>
-
-      <Row className="artworks-list-message-wrapper">{children}</Row>
-    </>
+    </div>
   );
 };
 export default Artworkslist;

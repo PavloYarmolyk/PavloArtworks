@@ -1,15 +1,17 @@
 #top {
-  position: relative;
+  position: absolute;
   height: 1px;
   top: -10px;
 }
 .artworks-list-bg {
+  grid-area: 1/1;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  display: grid;
+  z-index: 0;
   background-attachment: fixed;
   // background: url('../images/hero-gallery-desktopn2.webp') no-repeat fixed center;
 }

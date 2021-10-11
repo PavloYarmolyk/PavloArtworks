@@ -10,7 +10,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: center / cover no-repeat url('../images/hero-gallery-desktopn2.webp');
+  // background: center / cover no-repeat url('../images/hero-gallery-desktopn2.webp');
   background-attachment: fixed;
 }
 .bio-message-wrapper {
@@ -45,7 +45,9 @@
       font-size: 2rem;
       text-align: justify;
     }
-
+    & .gatsby-resp-image-wrapper {
+      max-width: 320px !important;
+    }
     & .gatsby-resp-image-image {
       border-radius: 5%;
     }
