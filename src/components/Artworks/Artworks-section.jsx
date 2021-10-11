@@ -60,33 +60,56 @@ const Artworkslist = () => {
     <>
       <div id="top" />
       {/* <div className="artworks-list-bg" /> */}
-      <GatsbyImage className="artworks-list-bg desktop" alt="" image={imageForDesktop} />
-      <GatsbyImage className="artworks-list-bg mobile" alt="" image={imageForMobile} />
-      <Container className="filter-container">
-        <div>
-          <h1 className="align-left white filter-header">
-            Artworks by Section{' '}
-            <i className={filtersArrow} onClick={filtersVisibility} aria-hidden="true" />
-          </h1>
-          <div className={filterFisibility}>
-            <Link
-              to={'/artworks'}
-              activeStyle={{ color: 'white' }}
-              partiallyActive={true}
-              className="cta-btn--filter"
-            >
-              All Artworks
-            </Link>
-            <ArtworksFilterComponent />
+      <GatsbyImage
+        style={{
+          gridArea: '1/1',
+        }}
+        className="artworks-list-bg desktop"
+        alt=""
+        image={imageForDesktop}
+      />
+      <GatsbyImage
+        style={{
+          gridArea: '1/1',
+        }}
+        className="artworks-list-bg mobile"
+        alt=""
+        image={imageForMobile}
+      />
+      <div
+        style={{
+          gridArea: '1/1',
+          position: 'relative',
+          placeItems: 'center',
+          display: 'grid',
+        }}
+      >
+        <Container className="filter-container">
+          <div>
+            <h1 className="align-left white filter-header">
+              Artworks by Section{' '}
+              <i className={filtersArrow} onClick={filtersVisibility} aria-hidden="true" />
+            </h1>
+            <div className={filterFisibility}>
+              <Link
+                to={'/artworks'}
+                activeStyle={{ color: 'white' }}
+                partiallyActive={true}
+                className="cta-btn--filter"
+              >
+                All Artworks
+              </Link>
+              <ArtworksFilterComponent />
+            </div>
           </div>
-        </div>
-      </Container>
-      <Container>
-        <Row className="artworks-list-message-wrapper">
-          <h1 className="align-left">All Artworks</h1>
-          <ArtworksListComponent />
-        </Row>
-      </Container>
+        </Container>
+        <Container>
+          <Row className="artworks-list-message-wrapper">
+            <h1 className="align-left">All Artworks</h1>
+            <ArtworksListComponent />
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };

@@ -68,10 +68,31 @@ const Bio = () => {
       return (
         <div key={edge.node.frontmatter.title}>
           <div id="top" />
-          {/* <div className="bio-bg" /> */}
-          <GatsbyImage className="bio-bg desktop" alt="" image={imageForDesktop} />
-          <GatsbyImage className="bio-bg mobile" alt="" image={imageForMobile} />
-          <div className="bio-message-wrapper">
+          <GatsbyImage
+            style={{
+              gridArea: '1/1',
+            }}
+            className="artworks-list-bg desktop"
+            alt=""
+            image={imageForDesktop}
+          />
+          <GatsbyImage
+            style={{
+              gridArea: '1/1',
+            }}
+            className="artworks-list-bg mobile"
+            alt=""
+            image={imageForMobile}
+          />
+          <div
+            style={{
+              gridArea: '1/1',
+              position: 'relative',
+              placeItems: 'center',
+              display: 'grid',
+            }}
+            className="bio-message-wrapper"
+          >
             <div className="bio-intro">
               <Zoom duration={500} delay={10}>
                 <GatsbyImage

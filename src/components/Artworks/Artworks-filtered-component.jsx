@@ -57,8 +57,22 @@ const Artworkslist = ({ children }) => {
   return (
     <>
       <div id="top" />
-      <GatsbyImage className="artworks-list-bg desktop" alt="" image={imageForDesktop} />
-      <GatsbyImage className="artworks-list-bg mobile" alt="" image={imageForMobile} />
+      <GatsbyImage
+        style={{
+          gridArea: '1/1',
+        }}
+        className="artworks-list-bg desktop"
+        alt=""
+        image={imageForDesktop}
+      />
+      <GatsbyImage
+        style={{
+          gridArea: '1/1',
+        }}
+        className="artworks-list-bg mobile"
+        alt=""
+        image={imageForMobile}
+      />
       <div className="filter-container">
         <h1 className="align-left white filter-header">
           Artworks by Section{' '}

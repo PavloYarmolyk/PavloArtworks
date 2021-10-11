@@ -1,7 +1,7 @@
 {
   "logo": "../images/LogoN.webp",
   "alt": "Pavlo yarmolyk",
-  "logo_link_to": "/home",
+  "logo_link_to": "/",
   "menu_tab": [
     {
       "nav_title": "Home",
