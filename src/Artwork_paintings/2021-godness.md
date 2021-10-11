@@ -1,6 +1,6 @@
 ---
 layout: artwork
-slug: artwork7/godness
+slug: artworks/godness
 title: Godness
 date: 2019-01-01T22:24:49.739Z
 featured: ../images/005_007_Godness_001.jpg
