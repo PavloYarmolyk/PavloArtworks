@@ -64,7 +64,7 @@ const Footer = ({ linkTo }) => {
               Developed by{' '}
               <a
                 id="dev-by"
-                href="https://www.linkedin.com/in/pavlo-justcodeit/"
+                href="https://www.linkedin.com/in/pavloomelianchuk/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

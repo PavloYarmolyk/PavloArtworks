@@ -17,7 +17,7 @@ const Tags = ({ pageContext, data }) => {
   tag = tag.toUpperCase();
   const { edges, totalCount } = data.allMarkdownRemark;
   const tagHeader = `${totalCount} Artwork${totalCount === 1 ? '' : 's'} found`;
-  const Header = `${tag}`
+  const Header = `${tag}`;
   return (
     <>
       <Seo />

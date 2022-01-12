@@ -110,7 +110,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.shortName,
+        name: config.title,
         short_name: config.shortName,
         description: config.description,
         start_url: config.pathPrefix,
